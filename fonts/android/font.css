@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Android';
+  src: url('Android.eot');
+  src: url('Android.woff2') format('woff2'),
+       url('Android.woff') format('woff'),
+       url('Android.ttf') format('truetype'),
+       url('Android.svg#Android') format('svg'),
+       url('Android.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
