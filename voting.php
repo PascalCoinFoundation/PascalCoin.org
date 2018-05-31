@@ -46,16 +46,8 @@
     <div id="sb-site">
         <div class="boxed">
             
-<iframe src="http://www.pascalexplorer.com/Voting/Embed"  scrolling="no" style=" width: 100%; height: 3000px;  overflow: hidden;" ></iframe>
+<iframe src="http://www.pascalexplorer.com/Voting/Embed" frameborder="0" scrolling="no" style="width: 100%; height: 3650px;  overflow: hidden;" ></iframe>
 
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <section class="css-section">
-                    <row>
-   
    
 <?php include 'footer.php';?>
    
