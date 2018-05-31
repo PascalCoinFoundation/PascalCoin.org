@@ -25,7 +25,7 @@ define("ADMIN_MAIL", "webizztechnosoft@gmail.com");
             <ul class="nav navbar-nav">
                 <li class="menuItem <?php echo $current_url==BASE_URL ? 'menuItem-active':'';?>"><a href="http://pascalcoin.org">Home</a></li>                
                 <li class="menuItem <?php echo strpos($current_url,'whitepapers')!==false ? 'menuItem-active':'';?>"><a href="whitepapers">Whitepapers</a></li>
-                <li class="menuItem <?php echo strpos($current_url,'voting')!==false ? 'menuItem-active':'';?>"><a href="voting">Voting</a></li>
+                <li class="menuItem <?php echo strpos($current_url,'voting')!==false ? 'menuItem-active':'';?>"><a href="http://pascalcoin.org/voting">Voting</a></li>
                 <li class="menuItem <?php echo strpos($current_url,'contact_us')!==false ? 'menuItem-active':'';?>"><a href="contact_us">Contact</a></li>
             </ul>
         </div>
