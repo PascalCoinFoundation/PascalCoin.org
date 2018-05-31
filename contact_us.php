@@ -60,7 +60,7 @@
                             $mob_no=$_POST['mob_no'];
                             $comment=trim($_POST['comment']);
 
-                            if(!empty($name) && !empty($email) && !empty($mob_no) && !empty($comment)){
+                            if(!empty($name) && !empty($email) && !empty($comment)){
                                  if( !!filter_var($email, FILTER_VALIDATE_EMAIL) ) {      
 
                                     $clt_subject =     "PascalCoin: New Contact Message";
