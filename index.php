@@ -228,7 +228,7 @@
                                     <i class="bi bi-crown"></i>
                                 </div> -->
                                     <div class="counter-text">
-                                    <p class="fact-number">84 <span>million</span></p>
+                                    <p class="fact-number">42 <span>million</span></p>
                                     <h4>Max Coin</h4>
                                     </div>
                                 </div>
@@ -267,7 +267,7 @@
                                         <i class="bi bi-emo-smile"></i>
                                     </div> -->
                                     <div class="counter-text">
-                                        <p class="fact-number">100 <span>PASC</span></p>
+                                        <p class="fact-number">40 <span>PASC</span></p>
                                         <h4>Block Rewards</h4>
                                     </div>
                                 </div>
