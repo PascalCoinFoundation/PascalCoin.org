@@ -356,7 +356,7 @@
               <div class="carousel-inner">
               
                 <div class="item active">
-                  <img src="img/slide-1.jpg">
+                  <!--img src="img/slide-1.jpg"-->
                    <div class="carousel-caption carousel-caption22">
                     <h3>Accomplished</h3>
                     <div class="">
@@ -369,19 +369,22 @@
                                         <li><i class="fa fa-check-square"></i><p>CORE: Checkpointing</p></li>
                                         <li><i class="fa fa-check-square"></i><p>CORE: Account Names & Types</p></li>
                                         <li><i class="fa fa-check-square"></i><p>CORE: Mobile/light-client support</p></li>
+                                        <li><i class="fa fa-square-square"></i><p>CORE: 50% inflation reduction</p></li>                                        
+                                        <li><i class="fa fa-square-square"></i><p>CORE: Add 20% developer reward</p></li>                                        
                                         <li><i class="fa fa-check-square"></i><p>VOTING: Blockhain voting website</p></li>
                                         <li><i class="fa fa-check-square"></i><p>VOTING: SafeBox Voting (phase 1)</p></li>
                                         <li><i class="fa fa-check-square"></i><p>MULTISIG: Schnorr crypto-library</p></li>
                                         <li><i class="fa fa-check-square"></i><p>ANON: In-protocol PASC & PASA exchange</p></li>
                                         <li><i class="fa fa-check-square"></i><p>GUI: New Wallet (with OS X support)</p></li>
                                         <li><i class="fa fa-check-square"></i><p>GUI: Translation Portal</p></li>
+                                        <li><i class="fa fa-square"></i><p>DAO: 90% developer reward open to community </p></li>                                        
                                     </ul>
                                 </div>
                   </div>
                 </div><!-- End Item -->
          
                 <div class="item">
-                    <img src="img/slide-2.jpg">
+                    <!--img src="img/slide-2.jpg"-->
                     <div class="carousel-caption carousel-caption22">
                         <h3>Our Goals</h3>
                         <div class="col-sm-12">
@@ -389,9 +392,7 @@
                                         <li ><i class="fa fa-square"></i><p>CORE: Checkpoint Torrenting</p></li>
                                         <li><i class="fa fa-square"></i><p>CORE: Account Data</p></li>
                                         <li><i class="fa fa-square"></i><p>CORE: Layer-2 operation support</p></li>
-                                        <li><i class="fa fa-square"></i><p>CORE: 50% inflation reduction</p></li>
                                         <li><i class="fa fa-square"></i><p>CORE: Super-optimization phase (goal: 100k/sec)</p></li>
-                                        <li><i class="fa fa-square"></i><p>CORE: Add 20% developer reward</p></li>
                                         <li><i class="fa fa-square"></i><p>VOTING: SafeBox Voting (phase 2)</p></li>
                                         <li><i class="fa fa-square"></i><p>MULTISIG: Schnorr aggregate signatures</p></li>
                                         <li><i class="fa fa-square"></i><p>ANON: Private Balances & Payments (ZK-SNARKs)</p></li>
@@ -399,10 +400,9 @@
                                         <li><i class="fa fa-square"></i><p>GUI: Mobile Wallets (iOS & Android)</p></li>
                                         <li><i class="fa fa-square"></i><p>LAYER2: Private Send Protocol</p></li>
                                         <li><i class="fa fa-square"></i><p>LAYER2: PASC Data Storage Network (DSN)</p></li>
-                                        <li><i class="fa fa-square"></i><p> LAYER2: PascalTokens V1 </p></li>
+                                        <li><i class="fa fa-square"></i><p>LAYER2: PascalTokens V1 </p></li>
                                         <li><i class="fa fa-square"></i><p>LAYER2: PascalDEX (decentralised exchange)</p></li>
                                         <li><i class="fa fa-square"></i><p>LAYER2: PascalMessenger (PASC MSG) </p></li>
-                                        <li><i class="fa fa-square"></i><p>DAO: 90% developer reward open to community </p></li>
                                     </ul>
                                 </div>
                     </div>
