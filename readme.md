@@ -16,8 +16,6 @@ composer install
 # copy .env.example
 cp .env.example .env
 
-# create encryption key
-php artisan generate:key
 ```
 
 Edit the following values in the .env file:
@@ -32,10 +30,30 @@ Edit the following values in the .env file:
 
 `MAIL_*` - Email settings.
 
+
+Now generate an encryption key for sessions.
+
+```
+php artisan key:generate
+```
+
 Migrate the database:
 
 ```
 php artisan migrate
+```
+
+Fetch CMC data once so we have "something":
+
+```
+php artisan pascal:dumpcmc
+```
+
+Setup a cron, this will periodically pull coinmarketcap data.
+Scheduling is done within the application.
+
+```
+* * * * * php /path-to-your-project/artisan schedule:run >> /dev/null 2>&1
 ```
 
 ## Webserver
@@ -62,6 +80,9 @@ Change .env settings:
 `APP_DEBUG=true`
 
 ```
+# fetch cmc data once
+php artisan pascal:dumpcmc
+
 # use local php webserver for simplicity
 php artisan serve
 
