@@ -1,0 +1,15 @@
+@import '~font-awesome/css/font-awesome.css';
+@import '~bootstrap/dist/css/bootstrap.css';
+
+$pascal-color: #f79321;
+$font-color: rgb(52, 73, 94);
+
+@import 'site';
+@import 'general';
+@import 'style';
+@import 'responsive';
+
+// pages
+@import 'pages/home';
+@import 'pages/projects';
+@import 'pages/contact';
