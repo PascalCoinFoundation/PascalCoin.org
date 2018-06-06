@@ -42,7 +42,14 @@
                 <li class="menuItem {{Route::currentRouteName() === 'home' ? 'menuItem-active':''}}"><a href="{{route('home')}}">Home</a></li>
                 <li class="menuItem {{Route::currentRouteName() === 'get_started' ? 'menuItem-active':''}}"><a href="{{route('get_started')}}">Get Started</a></li>
                 <li class="menuItem {{Route::currentRouteName() === 'whitepapers' ? 'menuItem-active':''}}"><a href="{{route('whitepapers')}}">Whitepapers</a></li>
-                <li class="menuItem {{Route::currentRouteName() === 'projects' ? 'menuItem-active':''}}"><a href="{{route('projects')}}">Projects</a></li>
+                <!--li class="menuItem {{Route::currentRouteName() === 'projects' ? 'menuItem-active':''}}"><a href="{{route('projects')}}">Projects</a></li-->
+                <li class="dropdown menuItem {{Request::is('development/*') ? 'menuItem-active':''}}">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="menuItem"><a href="{{route('pips')}}">PIPs</a></li>
+                        <li class="menuItem"><a href="{{route('projects')}}">Community Projects</a></li>
+                    </ul>
+                </li>
                 <li class="menuItem {{Route::currentRouteName() === 'voting' ? 'menuItem-active':''}}"><a href="{{route('voting')}}">Voting</a></li>
                 <li class="menuItem {{Route::currentRouteName() === 'contact' ? 'menuItem-active':''}}"><a href="{{route('contact')}}">Contact</a></li>
             </ul>
@@ -113,7 +120,22 @@
                                     <i class="fa fa-angle-right"></i>
                                     <a href="{{route('whitepapers')}}">Whitepapers</a>
                                 </li>
-
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <a href="{{route('pips')}}">PIPs</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <a href="{{route('projects')}}">Community Projects</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <a href="{{route('voting')}}">Voting</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
+                                    <a href="{{route('contact')}}">Contact</a>
+                                </li>
                                 <li>
                                     <i class="fa fa-angle-right"></i>
                                     <a href="https://github.com/PascalCoin/PascalCoin/releases" target="_blank">Download Wallet</a>

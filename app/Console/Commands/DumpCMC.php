@@ -12,7 +12,7 @@ class DumpCMC extends Command
      *
      * @var string
      */
-    protected $signature = 'pascal:dumpcmc';
+    protected $signature = 'pascal:cmc';
 
     /**
      * The console command description.

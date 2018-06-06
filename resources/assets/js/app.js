@@ -14,6 +14,8 @@ const pageMap = {
     voting: require('./pages/voting'),
     contact: require('./pages/contact'),
     get_started: require('./pages/get_started'),
+    pips: require('./pages/pips'),
+    pip: require('./pages/pip'),
 };
 
 $(function() {

@@ -47,7 +47,9 @@
                             <div class="col-sm-6 ">
                                 <img src="{{asset('images/logo.png')}}" class="img-responsive">
                                 <hr>
-                                <p>Have any questions? Want to get involved with the PascalCoin Project? Please fill out the contact form, we’d love to hear from you.</p>
+                                <p>
+                                    You can also get in touch with us directly via <a href="https://discord.gg/sJqcgtD">Discord</a>. We have a vibrant community there and would be happy if you join us.
+                                </p>
                                 <hr>
                             </div>
                             <div class="col-sm-6 ">
