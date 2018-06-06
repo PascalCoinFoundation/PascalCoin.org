@@ -22,6 +22,9 @@ body, html {
 	color:$font-color !important;
 	font-weight: bold;
 	padding: 0;
+	@include respond-below(sm) {
+		display: none;
+	}
 	.breadcrumb-title {
 		font-size: 30px;
 		font-weight: 700;
