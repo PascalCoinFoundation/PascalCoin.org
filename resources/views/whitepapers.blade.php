@@ -59,6 +59,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
+                <a id="reliable"></a>
+
                 <div class="abouthead">
                     <h3 class="section-heading">Extended Information</h3>
                     <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
@@ -67,7 +69,7 @@
             <div class="col-sm-12">
                 <div class="row">
 
-                    <div id="reliable" class="col-sm-12 text-center whitepapers2">
+                    <div class="col-sm-12 text-center whitepapers2">
                         <div class="single-feature">
                             <div class="whitepapers_icon">
                                 <div class="whitepapers_rotate whitepapers_rotate2"></div>

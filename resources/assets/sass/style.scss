@@ -175,7 +175,7 @@ body {
 }
 
 a {
-    color: #34495e;
+    color: $pascal-color;
     text-decoration: none;
     -webkit-transition: 0.25s;
     transition: 0.25s;
@@ -5381,7 +5381,6 @@ footer p {
     padding: 15px;
     border-radius: 3px;
     transition: .3s ease-in-out 0s;
-    text-align: center;
     background: #fff;
     overflow: hidden;
 }
@@ -5605,7 +5604,6 @@ button.accordion.active {
 .links a {
     color: #bdbdbd;
     font-weight: 500;
-    letter-spacing: 1px;
 }
 
 .links li i {

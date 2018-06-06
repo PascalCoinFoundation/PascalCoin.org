@@ -13,3 +13,18 @@ $font-color: rgb(52, 73, 94);
 @import 'pages/home';
 @import 'pages/projects';
 @import 'pages/contact';
+@import 'pages/pip';
+
+.md {
+  text-align: left;
+  padding: 20px;
+  h2 {
+    font-size: 30px;
+  }
+  ol, ul {
+    li {
+      list-style-type: disc
+    }
+  }
+}
+

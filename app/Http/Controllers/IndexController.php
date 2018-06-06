@@ -72,6 +72,14 @@ class IndexController extends Controller
         ]);
     }
 
+    public function project(Projects $project)
+    {
+        return view('project', [
+            'project' => $project,
+            'markdown' =>  \Parsedown::instance()->parse($project->description)
+        ]);
+    }
+
     /**
      * Handles the submit of the contact form.
      *
@@ -133,5 +141,33 @@ class IndexController extends Controller
         return response()->json([
             'success' => true
         ]);
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function pips(Request $request)
+    {
+        $pips = include storage_path('app/PIP/database.php');
+        return view('pips', ['pips' => array_reverse($pips)]);
+    }
+
+    public function pip(Request $request, int $pip)
+    {
+        $pips = include storage_path('app/PIP/database.php');
+        $pipData = [];
+        foreach($pips as $pipItem) {
+            if($pipItem['pip_no'] === $pip) {
+                $pipData = $pipItem;
+                $pip = \Parsedown::instance()->parse(\Storage::get('PIP/' . $pipData['pip'] . '.md'));
+                $pip = str_replace('resources/PIP-', asset('storage/PIP/resources/PIP-'), $pip);
+            }
+        }
+        if(count($pipData) === 0) {
+            exit;
+        }
+
+        return view('pip', ['pip' => $pip, 'pipData' => $pipData]);
     }
 }

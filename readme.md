@@ -83,7 +83,8 @@ Change .env settings:
 
 ```
 # fetch cmc data once
-php artisan pascal:dumpcmc
+php artisan pascal:cmc
+php artisan pascal:pip
 
 # use local php webserver for simplicity
 php artisan serve

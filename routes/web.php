@@ -16,9 +16,12 @@ Route::get('/whitepapers', 'IndexController@whitepapers')->name('whitepapers');
 Route::get('/voting', 'IndexController@voting')->name('voting');
 Route::get('/contact', 'IndexController@contact')->name('contact');
 Route::get('/get_started', 'IndexController@getStarted')->name('get_started');
-Route::get('/projects', 'IndexController@projects')->name('projects');
+Route::get('/development/projects', 'IndexController@projects')->name('projects');
+Route::get('/development/projects/{project}', 'IndexController@project')->name('project');
 Route::post('/contact', 'IndexController@contactSubmit')->name('contact-submit');
 Route::post('/newsletter', 'IndexController@newsletterSubmit')->name('newsletter-submit');
+Route::get('/development/pips', 'IndexController@pips')->name('pips');
+Route::get('/development/pips/{pip}', 'IndexController@pip')->name('pip');
 
 Auth::routes();
 

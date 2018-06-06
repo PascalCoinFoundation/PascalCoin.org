@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('body-id')
-    projects
+    pip
 @endsection
 
 @section('content')
@@ -13,49 +13,43 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
-                        <h3 class="breadcrumb-title">Community Projects</h3>
+                        <h3 class="breadcrumb-title">PIPS</h3>
                         <ol class="breadcrumb">
                             <li><a href="{{route('home')}}">Home</a></li>
-                            <li class="active">Community Projects</li>
+                            <li><a href="{{route('pips')}}">PIPS</a></li>
+                            <li class="active">{{$pipData['pip']}}</li>
                         </ol>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 
-    <div class="content-section-b">
+    <div class="content-section-b" style="padding-bottom: 0">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="abouthead">
                         <!--h3 class="section-heading">Projects</h3-->
-                        <p>A list of community driven projects for PascalCoin.</p>
+                        <p>{{$pipData['pip']}}: {{$pipData['title']}}</p>
                         <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
-                </div>
+                    </div>
             </div>
         </div>
     </div>
-    <div class="content-section-b" style="padding: 0">
 
+    <div class="content-section-b" style="padding: 0">
     <div class="container">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Title</th>
-                <th>Category</th>
-            </tr>
-            </thead>
-            @foreach($projects as $project)
-                <tr onclick="window.location.href='{{route('pip', ['pip' => $project['pip_no']])}}';" style="cursor: pointer;">
-                    <td><a href="{{route('project', ['project' => $project->id])}}">{{$project->title}}</td>
-                    <td>Pascal</td>
-                </tr>
-            @endforeach
-        </table>
+            <div class="row">
+
+                <div id="infinite" class="col-sm-12">
+                    <div class="single-feature">
+                        <div class="md">
+                            {!! $pip !!}
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
     </div>
 @endsection
