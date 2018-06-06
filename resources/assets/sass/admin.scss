@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+@import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+
+$pascal-color: #f79321;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+table {
+  margin-top: 30px;
+  thead {
+    tr {
+      border-bottom: 3px solid $pascal-color;
+      border-top: 3px solid $pascal-color;
+      th {
+        font-weight: 300;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+﻿.glyphicon {
+    margin-right: 4px !important; /*override*/
+}
+
+.pagination .glyphicon {
+    margin-right: 0px !important; /*override*/
+}
+
+.pagination a {
+    color: #555;
+}
+
+.panel ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.faqpanel ul {
+    padding: inherit;
+    list-style-type: inherit;
+}
+
+.faqpanel ul li {
+    list-style-type: inherit;
+}
+
+.panel-heading {
+    background-color: $pascal-color !important;
+    border: medium none !important;
+    text-align: right;
+    padding: 0;
+}
+
+div#sb-site {
+    margin: 30px auto;
+    float: left;
+    width: 100%;
+}
