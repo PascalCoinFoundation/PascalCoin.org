@@ -1,6 +1,6 @@
 /* All Mobile Sizes (devices and browser) */
 
-@media only screen and (max-width: 767px) {
+@include respond-below(sm) {
     p {
         text-align: center;
     }

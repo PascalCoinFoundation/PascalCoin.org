@@ -22,6 +22,7 @@ Route::post('/contact', 'IndexController@contactSubmit')->name('contact-submit')
 Route::post('/newsletter', 'IndexController@newsletterSubmit')->name('newsletter-submit');
 Route::get('/development/pips', 'IndexController@pips')->name('pips');
 Route::get('/development/pips/{pip}', 'IndexController@pip')->name('pip');
+Route::get('/development/rpc', 'IndexController@rpc')->name('rpc');
 
 Auth::routes();
 

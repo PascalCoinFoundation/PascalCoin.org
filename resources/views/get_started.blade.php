@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('body-id')
-    contact
+    get_started
 @endsection
 
 @section('content')

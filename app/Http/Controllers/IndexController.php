@@ -170,4 +170,11 @@ class IndexController extends Controller
 
         return view('pip', ['pip' => $pip, 'pipData' => $pipData]);
     }
+
+
+    public function rpc(Request $request)
+    {
+        $rpc = \Parsedown::instance()->parse(\Storage::get('RPC.md'));
+        return view('rpc', ['rpc' => $rpc]);
+    }
 }

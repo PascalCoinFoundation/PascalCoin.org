@@ -7,11 +7,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
+    <meta name="description" content="A completely original cryptocurrency with groundbreaking new technology called Safebox">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>PascalCoin.com | Home</title>
+    <title>PascalCoin.com | {{strtoupper(trim(View::yieldContent('body-id')))}}</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="{{mix('css/app.css')}}" />
@@ -48,6 +48,7 @@
                     <ul class="dropdown-menu">
                         <li class="menuItem"><a href="{{route('pips')}}">PIPs</a></li>
                         <li class="menuItem"><a href="{{route('projects')}}">Community Projects</a></li>
+                        <li class="menuItem"><a href="{{route('rpc')}}">JSON RPC</a></li>
                     </ul>
                 </li>
                 <li class="menuItem {{Route::currentRouteName() === 'voting' ? 'menuItem-active':''}}"><a href="{{route('voting')}}">Voting</a></li>

@@ -38,9 +38,7 @@ class DumpRPC extends Command
      */
     public function handle()
     {
-        // fetch remote files
-        $pips = GitHub::repo()->show('PascalCoin', 'PascalCoin.wiki', '.');
-        print_r($pips);
-
+        $rpc = file_get_contents('https://raw.githubusercontent.com/wiki/PascalCoin/PascalCoin/JSON-RPC-API.md');
+        \Storage::put('RPC.md', $rpc);
     }
 }
