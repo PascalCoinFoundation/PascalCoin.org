@@ -8176,12 +8176,6 @@ html {
   border-bottom: 1px solid #f79321;
 }
 
-@media (max-width: 767px) {
-  .intro-header {
-    display: none;
-  }
-}
-
 .intro-subheader {
   text-align: left;
   color: #000 !important;
@@ -12916,6 +12910,12 @@ img.bannerlogo {
 
 #home .subscribe {
   color: white !important;
+}
+
+@media (max-width: 767px) {
+  #home .intro-header {
+    display: none;
+  }
 }
 
 #projects .project {

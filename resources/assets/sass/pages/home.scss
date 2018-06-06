@@ -2,4 +2,11 @@
   .subscribe {
     color: white !important;
   }
+
+  .intro-header {
+    @include respond-below(sm) {
+      display: none;
+    }
+
+  }
 }
