@@ -7,6 +7,9 @@ body, html {
 ::selection{background:#ee9209;color:white}
 
 .intro-header {
+	@include respond-below(sm) {
+		display: none;
+	}
 	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 	color: #fff;
 	float: left;
@@ -22,9 +25,6 @@ body, html {
 	color:$font-color !important;
 	font-weight: bold;
 	padding: 0;
-	@include respond-below(sm) {
-		display: none;
-	}
 	.breadcrumb-title {
 		font-size: 30px;
 		font-weight: 700;

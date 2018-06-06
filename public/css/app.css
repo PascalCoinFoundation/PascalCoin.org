@@ -8176,6 +8176,12 @@ html {
   border-bottom: 1px solid #f79321;
 }
 
+@media (max-width: 767px) {
+  .intro-header {
+    display: none;
+  }
+}
+
 .intro-subheader {
   text-align: left;
   color: #000 !important;
