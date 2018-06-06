@@ -39,6 +39,7 @@
 
     <div class="content-section-b" style="padding: 0">
     <div class="container">
+        <div class="single-feature">
         <table class="table table-striped">
             <thead>
             <tr>
@@ -57,6 +58,7 @@
                 </tr>
         @endforeach
         </table>
+        </div>
     </div>
     </div>
 @endsection
