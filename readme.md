@@ -8,7 +8,9 @@ You need PHP >= 7.1 and a running mysql server.
 
 ```
 # clone repo
-git clone $repo-url
+git clone $repo-url folder
+
+cd folder
 
 # install php dependencies
 composer install
@@ -18,7 +20,7 @@ cp .env.example .env
 
 ```
 
-Edit the following values in the .env file:
+Edit the following values in the `.env` file:
 
 `DB_*` - connection to the database, should be self explanatory.
 
@@ -49,7 +51,7 @@ Fetch CMC data once so we have "something":
 php artisan pascal:dumpcmc
 ```
 
-Setup a cron, this will periodically pull coinmarketcap data.
+Setup a cron. This will periodically pull coinmarketcap data, maybe other stuff later on.
 Scheduling is done within the application.
 
 ```
