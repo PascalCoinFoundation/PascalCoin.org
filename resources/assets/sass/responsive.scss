@@ -1,9 +1,6 @@
 /* All Mobile Sizes (devices and browser) */
 
 @include respond-below(sm) {
-    p {
-        text-align: center;
-    }
 
     h1, .h1 {
         font-size: 50px;
@@ -11,7 +8,6 @@
 
     h3, .h3 {
         font-size: 20px;
-        text-align: center
     }
 
     .col-sm-4 {
@@ -240,7 +236,6 @@
         padding-top: 0;
         padding-left: 10px;
         padding-right: 10px;
-        text-align: center;
         width: 100%;
     }
 

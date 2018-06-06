@@ -386,7 +386,7 @@
                 <div class="col-sm-12">
 
                     <h3>Our Goals</h3>
-                    <div class="col-sm-12">
+                    <div>
                         <ul class="roadmap goals">
                             <li><i class="fa fa-square"></i>
                                 <p>CORE: Checkpoint Torrenting</p></li>
