@@ -3,13 +3,15 @@ body {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    font-weight: 300;
     line-height: 1.72222;
-    color: #34495e;
+    color: $font-color;
     background-color: #ffffff;
 }
 
 a {
     color: $pascal-color;
+    font-weight: 700;
     text-decoration: none;
     -webkit-transition: 0.25s;
     transition: 0.25s;
@@ -37,8 +39,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: inherit;
-    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     line-height: 1.1;
     color: inherit;
 }
@@ -3489,7 +3491,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 
 .abouthead p {
     margin: 30px;
-    font-size: 26px;
+    font-size: 22px;
     @include respond-below(sm) {
         margin: 10px;
     }
@@ -3692,20 +3694,23 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 }
 
 .faq_accordian button.accordion {
-    background-color: #34495e;
-    color: #fff;
+    color: $font-color;
     width: 100%;
     text-align: left;
-    border: 1px solid #34495e;
+    border: none;
+    border-bottom: 1px solid #34495e;
     padding: 15px;
+    background: none;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 button.accordion.active {
-    background-color: $pascal-color;
+    //background-color: $pascal-color;
 }
 
 .faq_accordian button.accordion:focus {
-    border: 1px solid $pascal-color;
+    //border: 1px solid $pascal-color;
     outline: 0;
 }
 
@@ -3749,7 +3754,7 @@ button.accordion.active {
 .faq_accordian .panel {
     margin-bottom: 21px;
     background-color: #ffffff;
-    border: 1px solid $pascal-color;
+    //border: 1px solid $pascal-color;
     border-radius: 0px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);

@@ -103,7 +103,7 @@ class Home
         };
 
         this.slider = new $JssorSlider$("slider_container", options);
-        this.slider.$ScaleWidth(Math.min(document.body.clientWidth, 1920))
+        //this.slider.$ScaleWidth(Math.min(document.body.clientWidth, 1920))
 
         //responsive code begin
         //you can remove responsive code if you don't want the slider scales while window resizing

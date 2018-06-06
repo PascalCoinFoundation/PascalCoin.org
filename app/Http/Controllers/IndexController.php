@@ -65,6 +65,11 @@ class IndexController extends Controller
         return view('contact');
     }
 
+    /**
+     * Displays the list of projects.
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function projects()
     {
         return view('projects', [
@@ -72,6 +77,12 @@ class IndexController extends Controller
         ]);
     }
 
+    /**
+     * Displays a single project.
+     *
+     * @param Projects $project
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function project(Projects $project)
     {
         return view('project', [
@@ -144,37 +155,67 @@ class IndexController extends Controller
     }
 
     /**
-     * @param Request $request
+     * Shows a list of all PIPs.
+     *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function pips(Request $request)
+    public function pips()
     {
         $pips = include storage_path('app/PIP/database.php');
         return view('pips', ['pips' => array_reverse($pips)]);
     }
 
+    /**
+     * Shows a single PIP.
+     *
+     * @param Request $request
+     * @param int $pip
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function pip(Request $request, int $pip)
     {
         $pips = include storage_path('app/PIP/database.php');
         $pipData = [];
-        foreach($pips as $pipItem) {
-            if($pipItem['pip_no'] === $pip) {
-                $pipData = $pipItem;
-                $pip = \Parsedown::instance()->parse(\Storage::get('PIP/' . $pipData['pip'] . '.md'));
-                $pip = str_replace('resources/PIP-', asset('storage/PIP/resources/PIP-'), $pip);
+        $pipText = '';
+        foreach($pips as $pipItem)
+        {
+            if($pipItem['pip_no'] !== $pip) {
+                continue;
             }
+            $pipData = $pipItem;
+            $pipText = \Parsedown::instance()->parse(\Storage::get('PIP/' . $pipData['pip'] . '.md'));
+
+            // rewrite resource links
+            $pipText = str_replace('resources/PIP-', asset('storage/PIP/resources/PIP-'), $pipText);
+
+            break;
         }
+
         if(count($pipData) === 0) {
+            // TODO: 404
             exit;
         }
 
-        return view('pip', ['pip' => $pip, 'pipData' => $pipData]);
+        return view('pip', [
+            'pip' => $pipText,
+            'pipData' => $pipData
+        ]);
     }
 
-
+    /**
+     * Display the JSON RPC api documentation.
+     *
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function rpc(Request $request)
     {
         $rpc = \Parsedown::instance()->parse(\Storage::get('RPC.md'));
         return view('rpc', ['rpc' => $rpc]);
+    }
+
+    public function fundingTransparency()
+    {
+        return view('funding_transparency');
     }
 }

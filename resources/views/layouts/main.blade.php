@@ -13,8 +13,27 @@
 
     <title>PascalCoin.com | {{strtoupper(trim(View::yieldContent('body-id')))}}</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{mix('css/app.css')}}" />
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#eb6c44",
+                        "text": "#ffffff"
+                    },
+                    "button": {
+                        "background": "#f5d948"
+                    }
+                },
+                "theme": "edgeless",
+                "position": "top",
+                "static": true
+            })});
+    </script>
 </head>
 
 <body id="{{trim(View::yieldContent('body-id'))}}">
