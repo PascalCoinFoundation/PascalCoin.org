@@ -13,10 +13,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
-                        <h3 class="breadcrumb-title">PIPS</h3>
+                        <h3 class="breadcrumb-title">PascalCoin Improvement Proposals</h3>
                         <ol class="breadcrumb">
                             <li><a href="{{route('home')}}">Home</a></li>
-                            <li class="active">PIPS</li>
+                            <li class="active">PascalCoin Improvement Proposals</li>
                         </ol>
                     </div>
                 </div>

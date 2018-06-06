@@ -16,7 +16,7 @@
                         <h3 class="breadcrumb-title">PIPS</h3>
                         <ol class="breadcrumb">
                             <li><a href="{{route('home')}}">Home</a></li>
-                            <li><a href="{{route('pips')}}">PIPS</a></li>
+                            <li><a href="{{route('pips')}}">PascalCoin Improvement Proposals</a></li>
                             <li class="active">{{$pipData['pip']}}</li>
                         </ol>
                     </div>
