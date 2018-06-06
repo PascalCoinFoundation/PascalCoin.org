@@ -16,6 +16,7 @@ const pageMap = {
     get_started: require('./pages/get_started'),
     pips: require('./pages/pips'),
     pip: require('./pages/pip'),
+    rpc: require('./pages/rpc'),
 };
 
 $(function() {
