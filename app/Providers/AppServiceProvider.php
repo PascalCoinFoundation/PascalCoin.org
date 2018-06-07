@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\CoinMarketCap;
 use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -15,6 +16,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Schema::defaultStringLength(191);
+
         $symbols = config('pascal.cmc.currencies', []);
         $tickers = CoinMarketCap::whereIn('symbol', $symbols)
             ->orderBy('created_at', 'DESC')
