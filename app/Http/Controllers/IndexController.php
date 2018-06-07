@@ -145,9 +145,7 @@ class IndexController extends Controller
             ]);
         }
 
-        \Newsletter::subscribe($request->get('email'), [
-            'firstName' => $request->get('name')
-        ], getenv('MAILCHIMP_LIST'));
+        \Newsletter::subscribe($request->get('email'), [], getenv('MAILCHIMP_LIST'));
 
         return response()->json([
             'success' => true
