@@ -33,3 +33,8 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/admin/contacts', 'Admin\ContactController@index')->name('admin_contacts');
 });
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

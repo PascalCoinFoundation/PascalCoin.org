@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Contact;
+use App\FaqGroup;
 use App\Http\Requests\ContactRequest;
 use App\Projects;
 use Illuminate\Http\Request;
@@ -144,6 +145,10 @@ class IndexController extends Controller
                 'errors' => $validator->getMessageBag()->messages()
             ]);
         }
+
+        \App\Newsletter::create([
+            'email' => $request->get('email')
+        ]);
 
         \Newsletter::subscribe($request->get('email'), [], getenv('MAILCHIMP_LIST'));
 

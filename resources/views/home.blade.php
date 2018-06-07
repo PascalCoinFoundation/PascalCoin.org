@@ -375,7 +375,7 @@
                                     support)</p></li>
                             <li><i class="fa fa-check-square"></i>
                                 <p>GUI: Translation Portal</p></li>
-                            <li><i class="fa fa-square"></i>
+                            <li><i class="fa fa-check-square"></i>
                                 <p>DAO: 90% developer reward open to
                                     community </p></li>
                         </ul>
@@ -649,7 +649,7 @@
                                                 able to accept 0-confirmation
                                                 transactions with high degree of
                                                 confidence, suitable for small
-                                                purchases like Coffee.</p>
+                                                purchases like coffee.</p>
                                             <p>For transactions of significant
                                                 value, we commend a reasonable
                                                 number of confirmations before
@@ -721,7 +721,7 @@
                                                 generated and Albert published
                                                 the source code and wallet
                                                 installer on GitHub and
-                                                SourceForge, and explained it at
+                                                SourceForge, and explained it at the
                                                 Bitcoin freenode forum. A few
                                                 hours later he started a thread
                                                 at BitCoinTalk explaining
@@ -1000,7 +1000,7 @@
                                         <button class="accordion">How can I mine PascalCoin?</button>
                                         <div class="panel faqpanel">
                                             <p>There are many options to mine PascalCoin from solo-mining to pool-mining. Check out this mining guide.</p>
-                                            <p>Visit our Discord channel #mining and discuss with community to get started.</p>
+                                            <p>Visit our Discord channel #mining and discuss with community toget started.</p>
                                             <p>
                                                 <iframe src="https://www.youtube.com/embed/0EC_XTVgq6M"
                                                         width="560" height="315"
