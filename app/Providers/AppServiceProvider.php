@@ -20,14 +20,16 @@ class AppServiceProvider extends ServiceProvider
 
         \URL::forceScheme('https');
 
-        $symbols = config('pascal.cmc.currencies', []);
-        $tickers = CoinMarketCap::whereIn('symbol', $symbols)
-            ->orderBy('created_at', 'DESC')
-            ->take(count($symbols))
-            ->get();
+        if(php_sapi_name() !== 'cli') {
+            $symbols = config('pascal.cmc.currencies', []);
+            $tickers = CoinMarketCap::whereIn('symbol', $symbols)
+                ->orderBy('created_at', 'DESC')
+                ->take(count($symbols))
+                ->get();
 
-        foreach($tickers as $ticker) {
-            \View::share('cmc_' . $ticker->symbol, $ticker);
+            foreach ($tickers as $ticker) {
+                \View::share('cmc_' . $ticker->symbol, $ticker);
+            }
         }
     }
 
