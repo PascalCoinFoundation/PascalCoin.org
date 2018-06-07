@@ -18,6 +18,8 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
 
+        \URL::forceScheme('https');
+
         $symbols = config('pascal.cmc.currencies', []);
         $tickers = CoinMarketCap::whereIn('symbol', $symbols)
             ->orderBy('created_at', 'DESC')
