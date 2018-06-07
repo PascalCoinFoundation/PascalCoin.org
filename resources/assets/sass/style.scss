@@ -7,6 +7,8 @@ body {
     line-height: 1.72222;
     color: $font-color;
     background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {

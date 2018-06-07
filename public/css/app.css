@@ -8225,6 +8225,8 @@ body {
   line-height: 1.72222;
   color: #000;
   background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
