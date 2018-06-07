@@ -18,7 +18,9 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
 
-        \URL::forceScheme('https');
+        if(getenv('APP_ENV') === 'prod') {
+            \URL::forceScheme('https');
+        }
 
         if(php_sapi_name() !== 'cli') {
             $symbols = config('pascal.cmc.currencies', []);
