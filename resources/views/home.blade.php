@@ -563,7 +563,7 @@
                                                     balance, etc
                                                 </li>
                                                 <li>Blocks are mined using
-                                                    Proof-of-Work, with 5
+                                                    <a href="https://de.wikipedia.org/wiki/Proof_of_Work" target="_blank">Proof-of-Work</a>, with 5
                                                     minutes confirmation time
                                                 </li>
                                                 <li>Every new block appends an
@@ -644,7 +644,7 @@
                                                 more reliable than in other
                                                 cryptocurrencies. Additionally,
                                                 once the
-                                                double-spend-detection-serivice
+                                                double-spend-detection-service
                                                 is rolled out, merchants will be
                                                 able to accept 0-confirmation
                                                 transactions with high degree of
@@ -662,13 +662,13 @@
                                             PoW or PoS?
                                         </button>
                                         <div class="panel">
-                                            <p>PascalCoin is Proof-of-Work
+                                            <p>PascalCoin is <a href="https://de.wikipedia.org/wiki/Proof_of_Work" target="_blank">Proof-of-Work</a>
                                                 (PoW).</p>
                                             <p>The SafeBox model does not work
-                                                with Proof-of-Stake (PoS) since
+                                                with <a href="https://de.wikipedia.org/wiki/Proof_of_Stake" target="_blank">Proof-of-Stake</a> (PoS) since
                                                 stake-proofs cannot be
                                                 aggregated to secure the
-                                                SafeBox..</p>
+                                                SafeBox.</p>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 faq_accordian">
@@ -761,7 +761,7 @@
                                                 submit a PIP and all PIPs are
                                                 evaluated through the PIP
                                                 Workflow. <a
-                                                        href="https://github.com/PascalCoin/PascalCoin/tree/master/PIP">
+                                                        href="{{route('pips')}}">
                                                     Click here to see the
                                                     current list of PIPs.</a>
                                             </p>
@@ -822,7 +822,7 @@
                                         </button>
                                         <div class="panel">
                                             <p>The wallet supports English so far, but we are working on translations as well.
-                                                Reach out to us if you’d like to help with translations.</p>
+                                                <a href="{{route('contact')}}">Reach out to us</a> if you’d like to help with translations.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -868,7 +868,7 @@
                                                     to another
                                                 </li>
                                                 <li><strong>Change Account
-                                                        Key:</strong>changes
+                                                        Key:</strong> changes
                                                     owner of an account
                                                 </li>
                                                 <li><strong>List Account For
@@ -877,7 +877,7 @@
                                                     private sale
                                                 </li>
                                                 <li><strong>Delist
-                                                        account:</strong>delists
+                                                        account:</strong> delists
                                                     an account from sale
                                                 </li>
                                                 <li><strong>Buy
@@ -940,7 +940,7 @@
                                                 For small micro-transactions,
                                                 many accept 0-confirmation
                                                 transaction since they are still
-                                                quite safe. In future, there
+                                                quite safe. In the future, there
                                                 will be a
                                                 Double-Spend-Detection-Service
                                                 to further verify 0-confirmation
@@ -974,68 +974,33 @@
                                                 PascalCoin (PASC) for
                                                 trading:</p>
                                             <ul>
-                                                <li><strong>Poloniex – </strong>largest
-                                                    volume exchange (high
-                                                    volume)
-                                                </li>
-                                                <li><strong>Exchange Frizen
-                                                        – </strong>European
-                                                    exchange accepting cash
-                                                    deposits.
-                                                </li>
-                                                <li><strong>Alcurex – </strong>low
-                                                    volume, some arbitrage
-                                                    opportunities
-                                                </li>
-                                                <li><strong>BTC9 – </strong>low
-                                                    volume, some arbitrage
-                                                    opportunities
-                                                </li>
-                                                <li><strong>Bitsquare
-                                                        – </strong>decentralised,
-                                                    anonymous but low volume
+                                                <li><strong><a href="https://www.poloniex.com/" target="_blank">Poloniex</a> – </strong>largest volume exchange (high volume)</li>
+                                                <li><strong><a href="https://www.qbtc.com/" target="_blank">QBTC</a> – </strong>high volume exchange</li>
+                                                <li><strong>Bitsquare – </strong>decentralised, anonymous but low volume
                                                 </li>
                                             </ul>
-                                            <p>The following exchanges list
-                                                PascalCoin accounts (PASA) for
-                                                trading:</p>
+                                            <p>The following exchanges list PascalCoin accounts (PASA) for trading:</p>
                                             <ul>
                                                 <li>PascWallet.com</li>
-                                                <li>GetPasa.com (account
-                                                    dispenser)
+                                                <li>GetPasa.com (account dispenser)
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 faq_accordian">
-                                        <button class="accordion">How can I
-                                            integrate PascalCoin into my
-                                            exchange/service?
-                                        </button>
+                                        <button class="accordion">How can I integrate PascalCoin into my exchange/service?</button>
                                         <div class="panel">
-                                            <p>PascalCoin supports the full 3rd
-                                                party integration capability
-                                                including offline coldwallet
-                                                operation signing.</p>
-                                            <p>Simply install the daemon and use
-                                                the JSON-RPC API. See Developers
-                                                tab.</p>
+                                            <p>PascalCoin supports the full 3rd party integration capability including offline coldwallet operation signing.</p>
+                                            <p>Simply install the daemon and use the JSON-RPC API. See Developers tab.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="tab5primary">
                                     <div class="col-sm-12 faq_accordian">
-                                        <button class="accordion">How can I mine
-                                            PascalCoin?
-                                        </button>
+                                        <button class="accordion">How can I mine PascalCoin?</button>
                                         <div class="panel faqpanel">
-                                            <p>There are many options to mine
-                                                PacalCoin from solo-mining to
-                                                pool-mining. Check out this
-                                                mining guide.</p>
-                                            <p>Visit our Discord channel #mining
-                                                and discuss with community to
-                                                get started.</p>
+                                            <p>There are many options to mine PascalCoin from solo-mining to pool-mining. Check out this mining guide.</p>
+                                            <p>Visit our Discord channel #mining and discuss with community to get started.</p>
                                             <p>
                                                 <iframe src="https://www.youtube.com/embed/0EC_XTVgq6M"
                                                         width="560" height="315"
