@@ -9,7 +9,7 @@
     <div class="intro-header">
         <div style="min-height: 50px;">
 
-            <div class="container">
+            <div class="container" style="overflow: hidden;">
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="slider_container" style="width: 1300px; height: 130px; overflow: hidden;">
@@ -243,13 +243,13 @@
 
 
     <!--vertical slider-->
-    <div class="bg-2 gradient-2">
+    <div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
 
                     <div class="abouthead">
-                        <h3 class="section-heading" style="color: white;">Coin Specs</h3>
+                        <h3 class="section-heading">Coin Specs</h3>
                         <div class="mid-sep"><img src="{{asset('images/footsep.png')}}"
                                                   alt=""></div>
                     </div>
@@ -462,15 +462,13 @@
         <div class="container">
             <div class="subsc">
                 <div>
-                    <div class="abouthead">
-                        <h3 class="section-heading" style="color: white;">Subscribe Newsletter</h3>
+                        <h3 style="font-weight: 700; margin-top: 0; color: white;">Subscribe Newsletter</h3>
                     <p>Subscribe to our email newsletter for useful tips and
                         valuable resources.</p>
-                    <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""/>
-                    </div>
                 </div>
                 </div>
 
+                <div>
                 <div class="sub-text-box">
                     <div class="sub-tex">
                         <div class="input-group">
@@ -485,8 +483,9 @@
                         </div>
                     </div>
                 </div>
-                <div id="subscribe_success" style="display: none;color: #fff;">Thank you for your subscription.</div>
-                <div id="subscribe_error" style="display: none;color: orange;"></div>
+                <div id="subscribe_success" style="display: none;color: #f79321; padding: 4px; font-weight: 400; background: white;">Thank you for your subscription.</div>
+                <div id="subscribe_error" style="display: none;color: red; padding: 4px; font-weight: 400; background: white;"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -800,8 +799,12 @@
                                         </button>
                                         <div class="panel faqpanel">
                                             <p>
-                                                <img class="img-responsive"
-                                                     src="/images/New Wallet.png">
+                                                <i>Start-Screen</i>
+                                                <img class="img-responsive" src="/images/wallet/wallet_accounts.png">
+                                                <i>Multi-Operation Wizard</i>
+                                                <img class="img-responsive" src="/images/wallet/wallet_multi.png">
+                                                <i>Network information</i>
+                                                <img class="img-responsive" src="/images/wallet/wallet_network.png">
                                             </p>
                                         </div>
                                     </div>
@@ -818,10 +821,8 @@
                                             will new wallet support?
                                         </button>
                                         <div class="panel">
-                                            <p>What languages will new wallet
-                                                support?</p>
-                                            <p>Reach out to us if you’d like to
-                                                help with translations.</p>
+                                            <p>The wallet supports English so far, but we are working on translations as well.
+                                                Reach out to us if you’d like to help with translations.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1173,8 +1174,12 @@
                                         </button>
                                         <div class="panel faqpanel">
                                             <p>
-                                                <img class="img-responsive"
-                                                     src="/images/New Wallet.png">
+                                            <i>Start-Screen</i>
+                                            <img class="img-responsive" src="/images/wallet/wallet_accounts.png">
+                                            <i>Multi-Operation Wizard</i>
+                                            <img class="img-responsive" src="/images/wallet/wallet_multi.png">
+                                            <i>Network information</i>
+                                            <img class="img-responsive" src="/images/wallet/wallet_network.png">
                                             </p>
                                         </div>
                                     </div>
@@ -1191,10 +1196,8 @@
                                             will new wallet support?
                                         </button>
                                         <div class="panel">
-                                            <p>English, Spanish, Chinese, South
-                                                Korean, Japanese, Russian.</p>
-                                            <p>Reach out to us if you’d like to
-                                                help with translations.</p>
+                                            <p>The wallet supports English so far, but we are working on translations as well.
+                                                Reach out to us if you’d like to help with translations.</p>
                                         </div>
                                     </div>
                                 </div>

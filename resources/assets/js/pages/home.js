@@ -66,7 +66,7 @@ class Home
         const options = {
             $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
             $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-            $Idle: 64000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+            $Idle: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
             $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
 
             $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
@@ -107,11 +107,11 @@ class Home
 
         //responsive code begin
         //you can remove responsive code if you don't want the slider scales while window resizing
-       /* this.scaleSlider();
+        //this.scaleSlider();
 
-        $(window).bind("load", () => this.scaleSlider);
-        $(window).bind("resize", () => this.scaleSlider);
-        $(window).bind("orientationchange", () => this.scaleSlider);*/
+        //$(window).bind("load", () => this.scaleSlider);
+        //$(window).bind("resize", () => this.scaleSlider);
+        //$(window).bind("orientationchange", () => this.scaleSlider);*/
     }
 }
 

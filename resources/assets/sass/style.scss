@@ -3015,6 +3015,9 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
     width: 15%;
 }
 
+.section-heading {
+    font-size: 26px;
+}
 .section-heading img {
     float: left;
     margin-right: 6%;
@@ -3283,9 +3286,8 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 }
 
 .subsc {
-    float: left;
-    text-align: center;
     width: 100%;
+    text-align: left;
 }
 
 .subsc > h2 {
@@ -3307,13 +3309,15 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 }
 
 .btn.btn-default.subscribe-btn {
-    background-color: $pascal-color;
-    border-color: $pascal-color;
-    color: #fff;
+    background-color: white;
+    color: $pascal-color;
+    border: 1px solid white;
+    border-bottom: 2px solid white;
     font-size: 19px;
-    font-weight: bold;
+    font-weight: 700;
     padding: 15px 30px;
     text-transform: uppercase;
+    border-radius: 2px;
 }
 
 .sub-text-box .input-group-btn {
@@ -3323,7 +3327,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 
 .sub-text-box .form-control {
     border: 2px solid transparent;
-    border-radius: 4px 0 0 4px !important;
+    border-radius: 2px 0 0 2px !important;
     box-shadow: none;
     color: #34495e;
     font-size: 15px;
@@ -3334,12 +3338,18 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 }
 
 .subscribe {
-    background-image: url("../img/footer-bg.jpg");
-    background-size: cover;
-    float: left;
-    padding-bottom: 100px;
-    padding-top: 70px;
+    background-color: $pascal-color;
+    padding-bottom: 20px;
+    padding-top: 20px;
     width: 100%;
+    text-align: left !important;
+    .section-heading {
+        font-weight: 700;
+        text-align: left;
+    }
+    .abouthead .p {
+        text-align: left;
+    }
 }
 
 .footerwrap {
