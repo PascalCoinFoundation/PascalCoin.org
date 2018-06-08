@@ -70,7 +70,7 @@
                         <li class="menuItem"><a href="{{route('rpc')}}">JSON RPC</a></li>
                     </ul>
                 </li>
-                <li class="menuItem {{Route::currentRouteName() === 'voting' ? 'menuItem-active':''}}"><a href="{{route('voting')}}">Voting</a></li>
+                <!--li class="menuItem {{Route::currentRouteName() === 'voting' ? 'menuItem-active':''}}"><a href="{{route('voting')}}">Voting</a></li-->
                 <li class="menuItem {{Route::currentRouteName() === 'contact' ? 'menuItem-active':''}}"><a href="{{route('contact')}}">Contact</a></li>
             </ul>
         </div>
