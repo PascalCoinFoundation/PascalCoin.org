@@ -84,7 +84,7 @@
         </span>
     <span class="section-ticker__info">
             <span class="section-ticker__info-label">{{$cmc_BTC->symbol}}:</span>
-            <span class="section-ticker__info-data">&dollar;{{number_format($cmc_BTC->price, 8)}}</span>
+            <span class="section-ticker__info-data">{{number_format($cmc_BTC->price, 8)}}</span>
         </span>
     <span class="section-ticker__info">
             <span class="section-ticker__info-label">Market Cap:</span>
