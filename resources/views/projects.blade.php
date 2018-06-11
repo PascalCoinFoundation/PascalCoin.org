@@ -48,7 +48,7 @@
             @foreach($projects as $project)
                 <tr onclick="window.location.href='{{route('pip', ['pip' => $project['pip_no']])}}';" style="cursor: pointer;">
                     <td>
-                        [{{$project->category}}] <a href="{{$project->url}}" target="_blank">{{$project->title}}</a><br />
+                        <strong>[{{$project->category}}]</strong> <a href="{{$project->url}}" target="_blank">{{$project->title}}</a><br />
                         {{$project->description}}
                     </td>
                 </tr>
