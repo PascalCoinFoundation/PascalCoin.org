@@ -11,6 +11,6 @@ class FaqGroup extends Model
      */
     public function faq_entries()
     {
-        return $this->hasMany(FaqEntry::class);
+        return $this->hasMany(FaqEntry::class)->where('published', 1)->orderBy('position', 'ASC');
     }
 }

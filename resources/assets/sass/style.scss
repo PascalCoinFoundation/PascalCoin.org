@@ -7,8 +7,6 @@ body {
     line-height: 1.72222;
     color: $font-color;
     background-color: #ffffff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -231,7 +229,6 @@ pre {
     line-height: 1.4;
     border-radius: 4px;
     padding: 10px 15px;
-    -webkit-font-smoothing: subpixel-antialiased;
     -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
     transition: border .25s linear, color .25s linear, background-color .25s linear;
 }
@@ -2908,103 +2905,51 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 
 /*rotate*/
 .rotate {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-
     overflow: hidden;
     background-repeat: no-repeat;
+    background-position: center center;
     display: inline-block;
     float: none;
-    height: 110px;
-    width: 108px;
+    height: 60px;
+    width: 60px;
 }
 
 .Secure {
     margin-top: 5%;
     padding: 0 48px;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .rotate1 {
     background-image: url("../img/icons/icon1bg.png");
 }
 
-.Secure1:hover .rotate1 {
-    background-image: url("../img/icons/icon1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-
 .rotate2 {
     background-image: url("../img/icons/icon2bg.png");
-}
-
-.Secure2:hover .rotate2 {
-    background-image: url("../img/icons/icon2.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
 }
 
 .rotate3 {
     background-image: url("../img/icons/icon3bg.png");
 }
 
-.Secure3:hover .rotate3 {
-    background-image: url("../img/icons/icon3.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-
 .rotate4 {
     background-image: url("../img/icons/icon4bg.png");
 }
 
-.Secure4:hover .rotate4 {
-    background-image: url("../img/icons/icon4.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-
 .rotate5 {
-    background-image: url("../img/icons/icon-small-funding.png");
-}
-
-.Secure5:hover .rotate5 {
-    background-image: url("../img/icons/icon-small-funding-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
+    background-image: url("../img/icons/icon-funding.png");
 }
 
 .rotate6 {
-    background-image: url("../img/icons/icon-small-anonymity.png");
-}
-
-.Secure6:hover .rotate6 {
-    background-image: url("../img/icons/icon-small-anonymity-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
+    background-image: url("../img/icons/icon-anonymity.png");
 }
 
 .Securehead {
     color: #6a6a6a;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1.5pt;
+    font-size: 20px;
+    font-weight: 400;
     line-height: 24px;
     margin: 0;
-    text-transform: uppercase;
 }
 
 .Secure:hover .Securehead {
@@ -3036,8 +2981,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
     color: #fff;
     font-size: 14px;
     font-weight: bold;
-    letter-spacing: 0.9pt;
-
+    border-radius: 2px;
     padding: 11px 26px;
     text-transform: uppercase;
     border-color: $pascal-color;
@@ -3711,14 +3655,14 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
     text-align: left;
     border: none;
     border-bottom: 1px solid #34495e;
-    padding: 15px;
+    padding: 10px;
     background: none;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
 }
 
-button.accordion.active {
-    //background-color: $pascal-color;
+button.accordion.active, button.accordion:hover {
+    border-bottom: 2px solid #34495e;
 }
 
 .faq_accordian button.accordion:focus {
@@ -3887,16 +3831,6 @@ ul.links {
 }
 
 .get_started_rotate {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-
     overflow: hidden;
     background-repeat: no-repeat;
     display: inline-block;
@@ -3929,55 +3863,20 @@ ul.links {
     background-image: url("../img/getstarted/icon-get-started.png");
 }
 
-.get_started1:hover .get_started_rotate1 {
-    background-image: url("../img/getstarted/icon-get-started-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-
 .get_started_rotate2 {
     background-image: url("../img/getstarted/Wallet.png");
-}
-
-.get_started2:hover .get_started_rotate2 {
-    background-image: url("../img/getstarted/Wallet-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
 }
 
 .get_started_rotate3 {
     background-image: url("../img/getstarted/key.png");
 }
 
-.get_started3:hover .get_started_rotate3 {
-    background-image: url("../img/getstarted/key-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-
 .get_started_rotate4 {
     background-image: url("../img/getstarted/pass.png");
 }
 
-.get_started4:hover .get_started_rotate4 {
-    background-image: url("../img/getstarted/pass-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-
 .get_started_rotate5 {
     background-image: url("../img/getstarted/pass.png");
-}
-
-.get_started5:hover .get_started_rotate5 {
-    background-image: url("../img/getstarted/pass-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
 }
 
 .button {
@@ -4037,16 +3936,6 @@ ul.links {
 }
 
 .whitepapers_rotate {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-
     overflow: hidden;
     background-repeat: no-repeat;
     display: inline-block;
@@ -4075,69 +3964,27 @@ ul.links {
 }
 
 .whitepapers_rotate1 {
-    background-image: url("../img/Whitepapers-icons/icon-scaling.png");
-}
-
-.whitepapers1:hover .whitepapers_rotate1 {
     background-image: url("../img/Whitepapers-icons/icon-scaling-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
 }
 
 .whitepapers_rotate2 {
     background-image: url("../img/Whitepapers-icons/icon-reliability.png");
 }
 
-.whitepapers2:hover .whitepapers_rotate2 {
-    background-image: url("../img/Whitepapers-icons/icon-reliability-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-
 .whitepapers_rotate3 {
     background-image: url("../img/Whitepapers-icons/icon-accounts.png");
-}
-
-.whitepapers3:hover .whitepapers_rotate3 {
-    background-image: url("../img/Whitepapers-icons/icon-accounts-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
 }
 
 .whitepapers_rotate4 {
     background-image: url("../img/Whitepapers-icons/icon-contracts.png");
 }
 
-.whitepapers4:hover .whitepapers_rotate4 {
-    background-image: url("../img/Whitepapers-icons/icon-contracts-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-
 .whitepapers_rotate5 {
     background-image: url("../img/Whitepapers-icons/icon-funding.png");
 }
 
-.whitepapers5:hover .whitepapers_rotate5 {
-    background-image: url("../img/Whitepapers-icons/icon-funding-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-
 .whitepapers_rotate6 {
     background-image: url("../img/Whitepapers-icons/icon-anonymity.png");
-}
-
-.whitepapers6:hover .whitepapers_rotate6 {
-    background-image: url("../img/Whitepapers-icons/icon-anonymity-1.png");
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
 }
 
 .whitepapers_description .Securehead {
@@ -4269,7 +4116,7 @@ img.bannerlogo {
 
 /*Sandesh css*/
 .single-feature.mhight {
-    min-height: 400px;
+    min-height: 330px;
 }
 
 @media only screen and (max-width: 736px) {

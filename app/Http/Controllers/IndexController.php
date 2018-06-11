@@ -23,7 +23,14 @@ class IndexController extends Controller
      */
     public function home()
     {
-        return view('home');
+        $faqGroups = FaqGroup::where('published', true)
+            ->orderBy('position', 'ASC')
+            ->with('faq_entries')
+            ->get();
+
+        return view('home', [
+            'faq' => $faqGroups
+        ]);
     }
 
     /**

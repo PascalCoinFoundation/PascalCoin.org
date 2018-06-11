@@ -24,8 +24,16 @@
 }
 
 .panel-heading {
-    background-color: $pascal-color !important;
+    background-color: #ecf0f1 !important;
     border: medium none !important;
     text-align: right;
     padding: 0;
+}
+.faq1 .panel-heading ul li a {
+    color: black;
+    font-weight: 300;
+}
+
+.faq1 .panel-heading ul li.active a {
+    font-weight: bold;
 }

@@ -47,8 +47,8 @@
                         <h3 class="section-heading">Whitepaper Download</h3>
                         <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
                     <p class="text-center">
-                        <a class="version" href="http://pascalcoin.org/PascalCoinWhitePaperV2.pdf" target="_blank">Download Whitepaper V2<span>version 2.1, June 2017</span></a>
-                        <a class="version" href="http://pascalcoin.org/PascalCoinWhitePaperV2.pdf" target="_blank">Download Whitepaper V1 <span>version 1.0 July 2016 </span></a>
+                        <a class="version" href="/PascalCoinWhitePaperV2.pdf" target="_blank">Download Whitepaper V2<span>version 2.1, June 2017</span></a>
+                        <a class="version" href="/PascalCoin White Paper - EN.pdf" target="_blank">Download Whitepaper V1 <span>version 1.0 July 2016 </span></a>
                     </p>
                     </div>
                 </div>
