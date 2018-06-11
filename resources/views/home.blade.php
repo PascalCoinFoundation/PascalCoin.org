@@ -505,7 +505,7 @@
                         <div class="panel-heading">
                             <ul class="nav nav-tabs">
                                 @foreach($faq as $faqGroup)
-                                <li class="active"><a href="#tab{{$loop->iteration}}primary" data-toggle="tab">
+                                <li class="{{$loop->iteration === 1 ? 'active' : ''}}"><a href="#tab{{$loop->iteration}}primary" data-toggle="tab">
                                         <i class="fa fa-{{$faqGroup->icon}}"></i>{{$faqGroup->title}}</a>
                                 </li>
                                 @endforeach
