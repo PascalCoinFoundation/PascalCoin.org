@@ -45,16 +45,12 @@
         <div class="single-feature">
 
         <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Title</th>
-                <th>Category</th>
-            </tr>
-            </thead>
             @foreach($projects as $project)
                 <tr onclick="window.location.href='{{route('pip', ['pip' => $project['pip_no']])}}';" style="cursor: pointer;">
-                    <td><a href="{{route('project', ['project' => $project->id])}}">{{$project->title}}</td>
-                    <td>Pascal</td>
+                    <td>
+                        [{{$project->category}}] <a href="{{$project->url}}" target="_blank">{{$project->title}}</a><br />
+                        {{$project->description}}
+                    </td>
                 </tr>
             @endforeach
         </table>
