@@ -16,7 +16,7 @@
 
             </div>
             <p style="color: white;">Vote for PascalCoin in Round 7 of the binance community coin of the month. Each vote counts!</p>
-            <a style="background: #f79321; color: white; font-size: 20px; padding: 10px 20px; border-radius: 2px; margin: 100px;" href="https://www.binance.com/vote.html">Vote now!</a>
+            <a style="background: #f79321; color: white; font-size: 20px; padding: 10px 20px; border-radius: 2px; margin: 100px; white-space: nowrap" href="https://www.binance.com/vote.html">Vote now!</a>
 
         </div>
         <div style="height: 1vh; background: #c0c0c0"></div>
