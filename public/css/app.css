@@ -12527,7 +12527,7 @@ img.bannerlogo {
 }
 
 @media only screen and (max-width: 800px) {
-  .section-ticker .section-ticker__info:nth-child(n+3):nth-last-child(n+3) {
+  .section-ticker .section-ticker__info:nth-child(n+3) {
     display: none;
   }
 }
