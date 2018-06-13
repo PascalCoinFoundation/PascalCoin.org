@@ -6,6 +6,22 @@
 
 @section('content')
 
+    @if(Request::get('binance') === '1' || env('BINANCE', false) === true)
+        <div id="binance" style="display: none;">
+        <div style="height: 1vh; background: #c0c0c0"></div>
+        <div id="binance-ct">
+            <h1 style="margin: 0; font-weight: 700; color: white;">Vote for PascalCoin on</h1>
+            <div style="display: block; margin-bottom: 30px;">
+                <img alt="self-Logo" src="{{asset('images/Binance_logo.svg')}}" height="50" style="margin-top: 15px;">
+
+            </div>
+            <p style="color: white;">Vote for PascalCoin in Round 7 of the binance community coin of the month. Each vote counts!</p>
+            <a style="background: #f79321; color: white; font-size: 20px; padding: 10px 20px; border-radius: 2px; margin: 100px;" href="https://www.binance.com/vote.html">Vote now!</a>
+
+        </div>
+        <div style="height: 1vh; background: #c0c0c0"></div>
+        </div>
+    @else
     <div class="intro-header">
         <div style="min-height: 50px;">
 
@@ -62,6 +78,7 @@
             </div>
         </div>
     </div>
+    @endif
 
     <div class="content-section-b" style="box-shadow: inset 0 -10px 10px -10px #d0d0d0">
         <div class="container">

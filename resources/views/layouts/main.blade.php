@@ -57,7 +57,10 @@
         </div>
         <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li class="menuItem {{Route::currentRouteName() === 'home' ? 'menuItem-active':''}}"><a href="{{route('home')}}">Home</a></li>
+                @if(Request::get('binance') === '1' || env('BINANCE', false) === true)
+                    <li class="menuItem"><a href="https://www.binance.com/vote.html" style="font-weight: 700 !important"><img src="{{asset('images/binance-icon.png')}}" height="16" style="margin-right: 10px;">Vote on Binance!</a></li>
+                @endif
+                <!--li class="menuItem {{Route::currentRouteName() === 'home' ? 'menuItem-active':''}}"><a href="{{route('home')}}">Home</a></li-->
                 <li class="menuItem {{Route::currentRouteName() === 'get_started' ? 'menuItem-active':''}}"><a href="{{route('get_started')}}">Get Started</a></li>
                 <li class="menuItem {{Route::currentRouteName() === 'whitepapers' ? 'menuItem-active':''}}"><a href="{{route('whitepapers')}}">Whitepapers</a></li>
                 <!--li class="menuItem {{Route::currentRouteName() === 'projects' ? 'menuItem-active':''}}"><a href="{{route('projects')}}">Projects</a></li-->
