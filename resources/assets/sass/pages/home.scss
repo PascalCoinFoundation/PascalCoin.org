@@ -22,6 +22,34 @@
     height: auto;
   }
 
+  #binance-modal .modal-dialog {
+    border: 10px solid white;
+    border-radius: 0;
+    .modal-content {
+      border-radius: 0;
+      border: none;
+      background: #161616;
+      box-shadow: none;
+      color: white;
+      h4 {
+        font-weight: 700;
+      }
+
+      .modal-header {
+        border: none;
+      }
+      .modal-body {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .modal-footer {
+        margin-top: 0;
+        border: none;
+        text-align: center;
+      }
+    }
+  }
+
   #binance-ct {
     h1 {
       background: transparent !important;

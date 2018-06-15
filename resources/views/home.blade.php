@@ -13,14 +13,32 @@
             <h1 style="margin: 0; font-weight: 700; color: white;">Vote for PascalCoin on</h1>
             <div style="display: block; margin-bottom: 30px;">
                 <img alt="self-Logo" src="{{asset('images/Binance_logo.svg')}}" height="50" style="margin-top: 15px;">
-
             </div>
-            <p style="color: white;">Vote for PascalCoin in Round 7 of the binance community coin of the month. Each vote counts!</p>
+            <p style="color: white;">Vote for PascalCoin in Round 7 of the binance community coin of the month. Each vote counts!<br />
+            <a data-toggle="modal" data-target="#binance-modal" href="#">How to vote?</a>
+            </p>
             <a style="background: #f79321; color: white; font-size: 20px; padding: 10px 20px; border-radius: 2px; margin: 100px; white-space: nowrap" href="https://www.binance.com/vote.html">Vote now!</a>
-
         </div>
         <div style="height: 1vh; background: #c0c0c0"></div>
         </div>
+        <div class="modal fade" id="binance-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">How to vote</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>You need an binance account to participate in the vote and own at least 0.1 BNB (BNB is the coin provided by Binance). <a href="https://www.binance.com/register.html" target="_blank">Register your account here</a>, it's free. After that, go to the <a href="https://www.binance.com/vote.html">voting page</a>, select PascalCoin and cast your vote. Your vote will deduct 0.1 BNB from your binance account.</p>
+                        <p>You can only vote once and a vote costs approximately 3 PascalCoin. If you want to exchange PASC for BNB, please visit our <a href="https://discord.gg/sJqcgtD">discord chat</a>, we are happy to help out.</p>
+                        <p>Thanks a lot!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a style="background: #f79321; color: white; font-size: 20px; padding: 10px 20px; border-radius: 2px; margin: 100px; white-space: nowrap" href="https://www.binance.com/vote.html">Got it!</a>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
     @else
     <div class="intro-header">
         <div style="min-height: 50px;">

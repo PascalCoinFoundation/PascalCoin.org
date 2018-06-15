@@ -12830,6 +12830,39 @@ img.bannerlogo {
   height: auto;
 }
 
+#home #binance-modal .modal-dialog {
+  border: 10px solid white;
+  border-radius: 0;
+}
+
+#home #binance-modal .modal-dialog .modal-content {
+  border-radius: 0;
+  border: none;
+  background: #161616;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+}
+
+#home #binance-modal .modal-dialog .modal-content h4 {
+  font-weight: 700;
+}
+
+#home #binance-modal .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+
+#home #binance-modal .modal-dialog .modal-content .modal-body {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#home #binance-modal .modal-dialog .modal-content .modal-footer {
+  margin-top: 0;
+  border: none;
+  text-align: center;
+}
+
 #home #binance-ct {
   padding: 20px;
   text-align: center;
