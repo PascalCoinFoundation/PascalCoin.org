@@ -121,6 +121,12 @@
                                                     @if($newsItem->style === "medium")
                                                         <i class="fa fa-medium" aria-hidden="true"></i>
                                                     @endif
+                                                        @if($newsItem->style === "twitter")
+                                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                        @endif
+                                                        @if($newsItem->style === "reddit")
+                                                            <i class="fa fa-reddit" aria-hidden="true"></i>
+                                                        @endif
                                                     @if($newsItem->style === "pascal")
                                                         <img src="{{asset('images/pascal_logo_svg_hollow.svg')}}" width="20">
                                                     @endif

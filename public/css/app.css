@@ -12929,6 +12929,14 @@ img.bannerlogo {
   color: #57Ad68;
 }
 
+#home #news .news-ct.twitter a i {
+  color: #00aced;
+}
+
+#home #news .news-ct.reddit a i {
+  color: #ff4500;
+}
+
 #home #news .news-ct a {
   font-weight: 700;
   color: black;
