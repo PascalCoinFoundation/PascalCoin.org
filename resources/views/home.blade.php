@@ -109,7 +109,8 @@
                 </div>
                 @if($news->count() > 0)
                 <div class="col-sm-6" id="news">
-                    <h3>Latest News</h3>
+                    <h3>Latest News
+                    <a style="float: right" href="/feed"><i class="fa fa-rss fa-1"></i></a></h3>
                     @foreach($news as $newsItem)
                         <div class="row">
                             <div class="col-xs-12">

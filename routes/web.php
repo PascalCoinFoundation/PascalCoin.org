@@ -28,7 +28,7 @@ Route::get('/development/projects/{project}', 'IndexController@project')->name('
 Route::get('/development/rpc', 'IndexController@rpc')->name('rpc');
 
 Auth::routes();
-
+Route::feeds();
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/admin/contacts', 'Admin\ContactController@index')->name('admin_contacts');
