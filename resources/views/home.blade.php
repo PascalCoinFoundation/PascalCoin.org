@@ -83,12 +83,39 @@
     <div class="content-section-b" style="box-shadow: inset 0 -10px 10px -10px #d0d0d0">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                     <div class="abouthead" style="overflow: hidden">
                         <img src="{{asset('images/logo.png')}}" alt=""/>
                         <p>A completely original cryptocurrency with groundbreaking new technology called Safebox</p>
-                        <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div>
                     </div>
+                </div>
+                <div class="col-sm-6" id="news">
+                    <h3>Latest News</h3>
+                    @foreach($news as $newsItem)
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="news-item">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="news-ct {{$newsItem->style}}">
+                                                <a href="{{$newsItem->link}}">
+                                                    @if($newsItem->style === "medium")
+                                                        <i class="fa fa-medium" aria-hidden="true"></i>
+                                                    @endif
+                                                    @if($newsItem->style === "pascal")
+                                                        <img src="{{asset('images/pascal_logo_svg_hollow.svg')}}" width="20">
+                                                    @endif
+
+                                                    {{$newsItem->title}}
+                                                </a>
+                                                <p>@parsedown($newsItem->teaser)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -267,7 +294,7 @@
                 <div class="col-sm-12">
 
                     <div class="abouthead">
-                        <h3 class="section-heading">Coin Specs</h3>
+                        <h3 class="section-heading">Coin Specifications</h3>
                         <div class="mid-sep"><img src="{{asset('images/footsep.png')}}"
                                                   alt=""></div>
                     </div>
@@ -338,10 +365,10 @@
 
             <div class="abouthead">
                 <h3 class="section-heading">Roadmap</h3>
-                <p>Now and into the future we are committed to improving the
+                <!--p>Now and into the future we are committed to improving the
                     availability and development of PascalCoin. Here you can see
                     our current broad-strokes roadmap for future development and
-                    progress of PascalCoin.</p>
+                    progress of PascalCoin.</p-->
                 <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""/>
                 </div>
             </div>
@@ -370,10 +397,10 @@
                             <li><i class="fa fa-check-square"></i>
                                 <p>CORE: Mobile/light-client support</p>
                             </li>
-                            <li><i class="fa fa-square-square"></i>
+                            <li><i class="fa fa-check-square"></i>
                                 <p>CORE: 50% inflation reduction</p>
                             </li>
-                            <li><i class="fa fa-square-square"></i>
+                            <li><i class="fa fa-check-square"></i>
                                 <p>CORE: Add 20% developer reward</p>
                             </li>
                             <li><i class="fa fa-check-square"></i>

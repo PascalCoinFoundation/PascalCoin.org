@@ -12861,6 +12861,57 @@ img.bannerlogo {
   background: transparent !important;
 }
 
+#home #news {
+  border-left: 1px solid #c0c0c0;
+}
+
+@media (max-width: 767px) {
+  #home #news {
+    border-left: none;
+    border-top: 1px solid #c0c0c0;
+    padding-top: 20px;
+  }
+}
+
+#home #news h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  #home #news h3 {
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+#home #news .news-ct {
+  border-radius: 2px;
+  background: white;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 10px;
+}
+
+#home #news .news-ct.medium a i {
+  color: #57Ad68;
+}
+
+#home #news .news-ct a {
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
+  margin: 0;
+}
+
+#home #news .news-ct p {
+  margin: 0;
+}
+
+#home #news .news-ct .news-ct {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
 #projects .project {
   background-color: white;
   border: 1px solid #f79321;

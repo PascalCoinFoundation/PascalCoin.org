@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\News;
 use App\Contact;
 use App\FaqGroup;
 use App\Http\Requests\ContactRequest;
@@ -21,15 +22,20 @@ class IndexController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function home()
+    public function home(Request $request)
     {
         $faqGroups = FaqGroup::where('published', true)
             ->orderBy('position', 'ASC')
             ->with('faq_entries')
             ->get();
 
+        $news = News::where('published', true)
+            ->orderBy('pub_date', 'DESC')
+            ->paginate(3);
+
         return view('home', [
-            'faq' => $faqGroups
+            'faq' => $faqGroups,
+            'news' => $news
         ]);
     }
 
