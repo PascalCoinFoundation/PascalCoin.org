@@ -101,12 +101,13 @@
     <div class="content-section-b" style="box-shadow: inset 0 -10px 10px -10px #d0d0d0">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-{{$news->count() > 0 ? '6' : '12'}}">
                     <div class="abouthead" style="overflow: hidden">
                         <img src="{{asset('images/logo.png')}}" alt=""/>
                         <p>A completely original cryptocurrency with groundbreaking new technology called Safebox</p>
                     </div>
                 </div>
+                @if($news->count() > 0)
                 <div class="col-sm-6" id="news">
                     <h3>Latest News</h3>
                     @foreach($news as $newsItem)
@@ -135,6 +136,7 @@
                         </div>
                     @endforeach
                 </div>
+                @endif
             </div>
         </div>
     </div>
