@@ -21,7 +21,7 @@ class Home
         this.$error = this.$el.find('#subscribe_error');
         this.$success = this.$el.find('#subscribe_success');
 
-        if(this.$el.find('#binance')) {
+        if(this.$el.find('#binance').length) {
             setTimeout(function() {
                 $("#binance").slideDown(400);
             }, 1000);
