@@ -56,7 +56,7 @@
                                                 <span>Scaling</span></div>
                                             <div class="thinkdata">The first cryptocurrency
                                                 that has broken the 100 transactions per
-                                                second barrier!
+                                                second barrier.
                                             </div>
 
                                         </div>
@@ -104,7 +104,7 @@
                 <div class="col-sm-{{$news->count() > 0 ? '6' : '12'}}">
                     <div class="abouthead" style="overflow: hidden">
                         <img src="{{asset('images/logo.png')}}" alt=""/>
-                        <p>A completely original cryptocurrency with groundbreaking new technology called Safebox</p>
+                        <p>A completely original cryptocurrency with groundbreaking new technology called SafeBox</p>
                     </div>
                 </div>
                 @if($news->count() > 0)
@@ -247,7 +247,7 @@
                         <div class="col-sm-6 col-md-4 text-center Secure3">
                             <div class="single-feature mhight">
                                 <div class="rotate rotate3"></div>
-                                <h3 class="Securehead">Account Names And
+                                <h3 class="Securehead">Account Names and
                                     Types</h3>
                                 <div class="midarrow"></div>
                                 <p>One of the key new features of PascalCoin is
