@@ -185,6 +185,10 @@
                                 </li>
                                 <li>
                                     <i class="fa fa-angle-right"></i>
+                                    <a href="https://www.qbtc.com/trade" target="_blank">QBTC</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
                                     <a href="https://www.pascwallet.com/Market/MarketPurchase" target="_blank"><span class="site-footer__link-subtext">PascWallet (PASA exchange)</span></a>
                                 </li>
                                 <li>
