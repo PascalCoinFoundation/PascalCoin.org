@@ -42,7 +42,6 @@
 <!--div id="preloader">
     <div id="status"></div>
 </div-->
-
 <!-- NavBar-->
 <nav class="navbar-default" role="navigation">
     <div class="container">
@@ -56,25 +55,7 @@
             <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset('images/logo.png')}}" alt=""/></a>
         </div>
         <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                @if(Request::get('binance') === '1' || env('BINANCE', false) === true)
-                    <li class="menuItem"><a href="https://www.binance.com/vote.html" style="font-weight: 700 !important"><img src="{{asset('images/binance-icon.png')}}" height="16" style="margin-right: 10px;">Vote on Binance!</a></li>
-                @endif
-                <li class="menuItem {{Route::currentRouteName() === 'home' ? 'menuItem-active':''}}"><a href="{{route('home')}}">Home</a></li>
-                <li class="menuItem {{Route::currentRouteName() === 'get_started' ? 'menuItem-active':''}}"><a href="{{route('get_started')}}">Get Started</a></li>
-                <li class="menuItem {{Route::currentRouteName() === 'whitepapers' ? 'menuItem-active':''}}"><a href="{{route('whitepapers')}}">Whitepapers</a></li>
-                <!--li class="menuItem {{Route::currentRouteName() === 'projects' ? 'menuItem-active':''}}"><a href="{{route('projects')}}">Projects</a></li-->
-                <li class="dropdown menuItem {{Request::is('development/*') ? 'menuItem-active':''}}">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li class="menuItem"><a href="{{route('pips')}}">PIPs</a></li>
-                        <li class="menuItem"><a href="{{route('projects')}}">Community Projects</a></li>
-                        <li class="menuItem"><a href="{{route('rpc')}}">JSON RPC</a></li>
-                    </ul>
-                </li>
-                <!--li class="menuItem {{Route::currentRouteName() === 'voting' ? 'menuItem-active':''}}"><a href="{{route('voting')}}">Voting</a></li-->
-                <li class="menuItem {{Route::currentRouteName() === 'contact' ? 'menuItem-active':''}}"><a href="{{route('contact')}}">Contact</a></li>
-            </ul>
+            {{menu('web', 'menu')}}
         </div>
 
     </div>
