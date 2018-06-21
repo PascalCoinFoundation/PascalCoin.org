@@ -3876,7 +3876,13 @@ ul.links {
 }
 
 .get_started_rotate5 {
-    background-image: url("../img/getstarted/pass.png");
+    background-image: url("../img/pascal_logo_svg_hollow.svg");
+    width: 60px;
+    height: 60px;
+    margin: 45px;
+    @include respond-below(sm) {
+        margin: 25px;
+    }
 }
 
 .button {

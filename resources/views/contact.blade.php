@@ -28,7 +28,7 @@
                 <div class="col-sm-12">
                     <div class="abouthead">
                         <!--h3 class="section-heading">Whitepapers</h3-->
-                        <p>Have any questions? Want to get involved with the PascalCoin Project? Please fill out the contact form, we’d love to hear from you.</p>
+                        <p>Have any questions? Want to get involved with the PascalCoin project? Please fill out the contact form, we’d love to hear from you.</p>
                         <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
                     </div>
                 </div>

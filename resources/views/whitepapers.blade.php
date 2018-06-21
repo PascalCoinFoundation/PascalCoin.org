@@ -30,7 +30,7 @@
             <div class="col-sm-12">
                 <div class="abouthead">
                     <!--h3 class="section-heading">Whitepapers</h3-->
-                    <p>Want a more indepth understanding of PascalCoin? Below you can download the Whitepapers which go into greater detail on the inner workings of PascalCoin, including the groundbreaking Safebox technology.</p>
+                    <p>Want a more indepth understanding of PascalCoin? Below you can download the Whitepapers which go into greater detail on the inner workings of PascalCoin, including the groundbreaking SafeBox technology.</p>
                     <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                                 <div class="midarrow"></div>
                                 <p>Since PascalCoin is state-based currency the security guarantees of 0-confirmation transactions are much stronger than in Bitcoin and other UTXO-based currencies.</p>
 
-                                <p>Whilst large payments should always wait for a reasonable number of confirmations, merchants will be able to accept 0-confirmation PascalCoin payments for small purchases thanks to the (planned) Double-Spend-Detection-Service. This service queries nodes throughout the planet to see if a double-spend has been detected. If after 5 – 10 seconds, no such double-spend has been detected, merchants are almost assured that the 0-confirmation payment will clear. Good enough for Coffee.</p>
+                                <p>Whilst large payments should always wait for a reasonable number of confirmations, merchants will be able to accept 0-confirmation PascalCoin payments for small purchases thanks to the (planned) Double-Spend-Detection-Service. This service queries nodes throughout the planet to see if a double-spend has been detected. If after 5 – 10 seconds, no such double-spend has been detected, merchants are almost assured that the 0-confirmation payment will clear. Good enough for coffee.</p>
                                 <p><strong>No Need For Lightning Network</strong></p>
                                 <p>As a direct consequence of reliable 0-confirmation transactions, there is no need for a Lightning Network in PascalCoin since 0-confirmation transactions are faster and their security guarantees almost as good – sufficient for micro-payments and everyday-commerce.</p>
                             </div>
@@ -97,10 +97,11 @@
                                 <p>One of the key new features of PascalCoin is that accounts can have unique names which are publicly visible, much in the same way as the domain names system. This allows a user to receive funds to their email address or chat moniker.</p>
                                 <p>It allows a shop to receive payments to their domain name or brand name. Payments still refer to accounts via numbers, but the name is used to lookup the account number just as a domain name is used to lookup an IP address.</p>
                                 <p>More importantly, account names and types serve a fundamental purpose in Layer-2 applications and Monetized APIs. For example, the account name could serve as a chat room name or a forum name. Account types further serve as a means to distinguish accounts for their use-case. For example, browsing accounts with type = 2 could be like browsing a list of chat rooms. How users interact with such Layer-2 applications is via Monetized API's described below.</p>
+                                <a id="infinite"></a>
                                 <p><strong>Commoditization of Address Space</strong></p>
                                 <p>In almost all other cryptocurrencies, new users can simply create a new address for themselves at will. This creates an infinite address-space which can quickly bloat the blockchain even though the number of users remains constant.</p>
                                 <p>If the address space was instead made finite, it becomes a limited resource able to be commoditized. This is how PascalCoin accounts (PASA) operate.</p>
-                                <p>The accounts are limited, but any public key can be associated to it. This creates a natural space-saving mechanism since the chain is not littered with unneeded or used keys. It also disincentivizes spammers, since spammer accounts would be naturally limited and thus easily identifiable/blockable. Also, and most importantly, commoditization of the address space facilitates the SafeBox structure itself which is the key component to achieve "Infinite Scaling".</p>
+                                <p>The accounts are limited, but any public key can be associated to it. This creates a natural space-saving mechanism since the chain is not littered with unneeded or used keys. It also disincentivizes spammers, since spammer accounts would be naturally limited and thus easily identifiable/blockable. Also, and most importantly, commoditization of the address space facilitates the SafeBox structure itself which is the key component to achieve <strong>"Infinite Scaling"</strong>.</p>
                             </div>
                         </div>
                     </div>

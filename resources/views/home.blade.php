@@ -190,6 +190,10 @@
                     <iframe width="100%"
                             src="https://www.youtube.com/embed/F25UU-0W9Dk?feature=oembed"
                             frameborder="0" allowfullscreen=""></iframe>
+                    <iframe width="100%"
+                            src="https://www.youtube.com/embed/_Md8zUt5lig?feature=oembed"
+                            frameborder="0" allowfullscreen=""></iframe>
+                    <small><a href="https://www.youtube.com/watch?v=s8m8E01VXJ8" target="_blank">Click here</a> for a version with <u>chinese subtitles</u></small>
                     <!--p><a class="alternate_download"
                           href="https://sourceforge.net/projects/pascalcoin/"
                           target="_blank">Alternate Download Site</a></p-->

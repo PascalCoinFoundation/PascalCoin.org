@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="A completely original cryptocurrency with groundbreaking new technology called Safebox">
+    <meta name="description" content="A completely original cryptocurrency with groundbreaking new technology called SafeBox">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -60,7 +60,7 @@
                 @if(Request::get('binance') === '1' || env('BINANCE', false) === true)
                     <li class="menuItem"><a href="https://www.binance.com/vote.html" style="font-weight: 700 !important"><img src="{{asset('images/binance-icon.png')}}" height="16" style="margin-right: 10px;">Vote on Binance!</a></li>
                 @endif
-                <!--li class="menuItem {{Route::currentRouteName() === 'home' ? 'menuItem-active':''}}"><a href="{{route('home')}}">Home</a></li-->
+                <li class="menuItem {{Route::currentRouteName() === 'home' ? 'menuItem-active':''}}"><a href="{{route('home')}}">Home</a></li>
                 <li class="menuItem {{Route::currentRouteName() === 'get_started' ? 'menuItem-active':''}}"><a href="{{route('get_started')}}">Get Started</a></li>
                 <li class="menuItem {{Route::currentRouteName() === 'whitepapers' ? 'menuItem-active':''}}"><a href="{{route('whitepapers')}}">Whitepapers</a></li>
                 <!--li class="menuItem {{Route::currentRouteName() === 'projects' ? 'menuItem-active':''}}"><a href="{{route('projects')}}">Projects</a></li-->
