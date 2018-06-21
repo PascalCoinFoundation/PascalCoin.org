@@ -56,6 +56,7 @@
                 <p>
                     @parsedown($item->content)
                 </p>
+                <p class="text-right"><a href="{{$item->source_link}}" target="_blank">Read more on {{$item->source_name}}</a></p>
             </div>
         </div>
         </div>
