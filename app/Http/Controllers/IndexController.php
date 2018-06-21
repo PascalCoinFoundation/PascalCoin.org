@@ -8,6 +8,7 @@ use App\News;
 use App\Contact;
 use App\FaqGroup;
 use App\Http\Requests\ContactRequest;
+use App\Page;
 use App\Press;
 use App\Projects;
 use App\WhitePaperContent;
@@ -263,6 +264,19 @@ class IndexController extends Controller
             ->orderBy('pub_date', 'DESC')
             ->get();
         return view('press', ['news' => $pressNews]);
+    }
+
+    /**
+     * Displays a dynamic content page.
+     *
+     * @param Request $request
+     * @param string $page
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function content(Request $request, string $page)
+    {
+        $content = Page::where('menu_ident', $page)->where('published', true)->first();
+        return view('content', ['content' => $content]);
     }
 
     public function fundingTransparency()

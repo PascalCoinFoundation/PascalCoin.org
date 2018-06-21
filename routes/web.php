@@ -27,14 +27,10 @@ Route::get('/development/pips/pip-{pip}', 'IndexController@pip')->name('pip');
 Route::get('/development/projects', 'IndexController@projects')->name('projects');
 Route::get('/development/projects/{project}', 'IndexController@project')->name('project');
 Route::get('/development/rpc', 'IndexController@rpc')->name('rpc');
+Route::get('/content/{page}', 'IndexController@content')->name('content');
 
 Auth::routes();
 Route::feeds();
-
-Route::group(['middleware' => ['auth']], function () {
-    Route::get('/admin/contacts', 'Admin\ContactController@index')->name('admin_contacts');
-});
-
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
