@@ -30,11 +30,11 @@
             <div class="col-sm-12">
                 <div class="abouthead">
                     <div class="press-kit-container">
-                        <small>Interesting in featuring PascalCoin?
+                        <small>Excited about PascalCoin and want to feature PascalCoin?
                             <a href="/presskit.zip" target="_blank">Download our press-kit for images and more.</a>
                         </small>
                     </div>
-                    <p>What others write about PascalCoin!</p>
+                    <p>Find out what others write about PascalCoin.</p>
                     <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
                 </div>
             </div>
