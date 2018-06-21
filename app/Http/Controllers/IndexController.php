@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\GetStartedContent;
 use App\HomeBox;
 use App\News;
 use App\Contact;
@@ -70,7 +71,13 @@ class IndexController extends Controller
      */
     public function getStarted()
     {
-        return view('get_started');
+        $contents = GetStartedContent::where('published', true)
+            ->orderBy('position', 'ASC')
+            ->get();
+
+        return view('get_started', [
+            'contents' => $contents
+        ]);
     }
 
     /**
@@ -244,6 +251,12 @@ class IndexController extends Controller
         return view('rpc', ['rpc' => $rpc]);
     }
 
+    /**
+     * Displays the external press releases.
+     *
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function press(Request $request)
     {
         $pressNews = Press::where('published', true)
