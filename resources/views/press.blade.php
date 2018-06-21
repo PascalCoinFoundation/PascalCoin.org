@@ -30,8 +30,8 @@
             <div class="col-sm-12">
                 <div class="abouthead">
                     <div class="press-kit-container">
-                        <small>Excited about PascalCoin and want to feature PascalCoin?
-                            <a href="/presskit.zip" target="_blank">Download our press-kit for images and more.</a>
+                        <small>Excited about PascalCoin and want to write about it?<br />
+                            <a href="/presskit.zip" target="_blank"><i class="fa fa-cloud-download"></i> Download our press-kit for images and more.</a>
                         </small>
                     </div>
                     <p>Find out what others write about PascalCoin.</p>

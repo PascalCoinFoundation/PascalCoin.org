@@ -11,6 +11,7 @@ require('./bootstrap');
 const pageMap = {
     home: require('./pages/home'),
     whitepapers: require('./pages/whitepapers'),
+    press: require('./pages/press'),
     voting: require('./pages/voting'),
     contact: require('./pages/contact'),
     get_started: require('./pages/get_started'),

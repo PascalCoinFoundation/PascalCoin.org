@@ -1,4 +1,9 @@
 #press {
+  .content-section-a {
+    @include respond-below(sm) {
+      padding-top: 0;
+    }
+  }
   .press-item {
     box-shadow: 0px 7px 35px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -30,8 +35,16 @@
   }
 
   .press-kit-container {
-    background: white;
-    border: 3px solid #666;
+    background-color: white;
+    background-image: url('../../img/pascal_logo_svg_clean.svg');
+    background-position: 3% 50%;
+    border: 3px solid $pascal-color;
     padding: 10px;
+    background-size: 12%;
+    background-repeat: no-repeat;
+    @include respond-below(sm) {
+      background-image: none;
+    }
+
   }
 }
