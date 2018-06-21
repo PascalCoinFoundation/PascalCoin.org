@@ -26,6 +26,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('pascal:cmc')->everyFiveMinutes();
         $schedule->command('pascal:rpc')->daily();
+        $schedule->command('pascal:exchange')->daily();
         $schedule->command('pascal:pip')->hourly();
         $schedule->command('pascal:medium')->hourly();
     }

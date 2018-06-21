@@ -253,6 +253,18 @@ class IndexController extends Controller
     }
 
     /**
+     * Display the exchange integration guide.
+     *
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function exchange(Request $request)
+    {
+        $exchange = \Parsedown::instance()->parse(\Storage::get('exchange.md'));
+        return view('exchange', ['exchange' => $exchange]);
+    }
+
+    /**
      * Displays the external press releases.
      *
      * @param Request $request

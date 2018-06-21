@@ -27,6 +27,7 @@ Route::get('/development/pips/pip-{pip}', 'IndexController@pip')->name('pip');
 Route::get('/development/projects', 'IndexController@projects')->name('projects');
 Route::get('/development/projects/{project}', 'IndexController@project')->name('project');
 Route::get('/development/rpc', 'IndexController@rpc')->name('rpc');
+Route::get('/development/exchange', 'IndexController@exchange')->name('exchange');
 Route::get('/content/{page}', 'IndexController@content')->name('content');
 
 Auth::routes();
