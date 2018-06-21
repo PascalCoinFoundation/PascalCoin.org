@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\HomeBox;
 use App\News;
 use App\Contact;
 use App\FaqGroup;
 use App\Http\Requests\ContactRequest;
 use App\Projects;
+use App\WhitePaperContent;
 use Illuminate\Http\Request;
 use Spatie\Newsletter\Newsletter;
 
@@ -33,9 +35,14 @@ class IndexController extends Controller
             ->orderBy('pub_date', 'DESC')
             ->paginate(3);
 
+        $boxes = HomeBox::where('published', true)
+            ->orderBy('position', 'ASC')
+            ->get();
+
         return view('home', [
             'faq' => $faqGroups,
-            'news' => $news
+            'news' => $news,
+            'boxes' => $boxes
         ]);
     }
 
@@ -46,7 +53,13 @@ class IndexController extends Controller
      */
     public function whitepapers()
     {
-        return view('whitepapers');
+        $contents = WhitePaperContent::where('published', true)
+            ->orderBy('position', 'ASC')
+            ->get();
+
+        return view('whitepapers', [
+            'contents' => $contents
+        ]);
     }
 
     /**

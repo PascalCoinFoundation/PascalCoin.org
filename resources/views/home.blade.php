@@ -219,19 +219,17 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="row">
+                        @foreach($boxes as $box)
                         <div class="col-sm-6 col-md-4 fadeInDown text-center Secure1">
                             <div class="single-feature mhight">
-                                <div class="rotate rotate1"></div>
-                                <h3 class="Securehead">Infinite Scaling</h3>
+                                <div class="rotate rotate1" style="background-image: url('{{asset('storage/' . $box->icon)}}')"></div>
+                                <h3 class="Securehead">{{$box->title}}</h3>
                                 <div class="midarrow"></div>
-                                <p>Infinite Scaling is the ability for a
-                                    cryptocurrency to run for an infinite period
-                                    of time using the same amount of storage (at
-                                    a constant throughput). All other...</p>
-                                <a class="button button-args" href="{{route('whitepapers')}}#infinite">Learn
-                                    More</a>
+                                <p>@parsedown($box->content)</p>
+                                <a class="button button-args" href="{{route('whitepapers')}}#wp_{{$box->white_paper_content_id}}">Learn More</a>
                             </div>
                         </div>
+                        @endforeach
 
                         <div class="col-sm-6 col-md-4 wow fadeInDown text-center Secure2">
                             <div class="single-feature mhight">
