@@ -2872,7 +2872,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 }
 
 .Think-Secure span {
-    color: $pascal-color;
+    color: rgba(0,0,0,.95);
 }
 
 .thinkdata {
@@ -4067,12 +4067,10 @@ img.bannerlogo {
 }
 
 .section-ticker__info-label {
-    opacity: 0.5;
     padding-right: 10px;
 }
 
 .section-ticker__info-data {
-    opacity: 0.7;
 }
 
 .section-ticker__info-data--down {

@@ -8,7 +8,29 @@ body, html {
 
 
 .intro-header {
-	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	background-image: linear-gradient(120deg, $pascal-color 0%, lighten($pascal-color, 10) 100%);
+	z-index: -2;
+	&:before
+	{
+		content: "";
+		position: absolute;
+		width: 200%;
+		height: 200%;
+		top: -50%;
+		left: -30%;
+		z-index: -1;
+		background-image: url(../img/pascal_logo_svg_hollow.svg);
+		-webkit-filter: grayscale(20%);
+		filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' ><filter id='gray20'><feColorMatrix in='SourceGraphic' type='saturate' values='0.2' /></filter></svg>#gray20");
+		filter:grayscale(20%);
+		background-position: 52% 0;
+		background-repeat: no-repeat;
+		-webkit-transform: rotate(30deg);
+		-moz-transform: rotate(30deg);
+		-ms-transform: rotate(30deg);
+		-o-transform: rotate(30deg);
+		transform: rotate(30deg);
+	}
 	color: #fff;
 	padding-bottom: 10px;
 	padding-top: 10px;
