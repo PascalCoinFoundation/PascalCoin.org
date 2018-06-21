@@ -31,7 +31,7 @@
                 <div class="abouthead">
                     <div class="press-kit-container">
                         <small>Excited about PascalCoin and want to write about it?<br />
-                            <a href="/presskit.zip" target="_blank"><i class="fa fa-cloud-download"></i> Download our press-kit for images and more.</a>
+                            <a href="/presskit.zip" target="_blank"><i class="fa fa-cloud-download"></i> Download our press-kit for media assets and more.</a>
                         </small>
                     </div>
                     <p>Find out what others write about PascalCoin.</p>
