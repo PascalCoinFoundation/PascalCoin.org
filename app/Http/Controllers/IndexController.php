@@ -7,6 +7,7 @@ use App\News;
 use App\Contact;
 use App\FaqGroup;
 use App\Http\Requests\ContactRequest;
+use App\Press;
 use App\Projects;
 use App\WhitePaperContent;
 use Illuminate\Http\Request;
@@ -241,6 +242,14 @@ class IndexController extends Controller
     {
         $rpc = \Parsedown::instance()->parse(\Storage::get('RPC.md'));
         return view('rpc', ['rpc' => $rpc]);
+    }
+
+    public function press(Request $request)
+    {
+        $pressNews = Press::where('published', true)
+            ->orderBy('pub_date', 'DESC')
+            ->get();
+        return view('press', ['news' => $pressNews]);
     }
 
     public function fundingTransparency()

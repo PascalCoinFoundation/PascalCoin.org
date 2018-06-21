@@ -1,0 +1,37 @@
+#press {
+  .press-item {
+    box-shadow: 0px 7px 35px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    @include respond-below(sm) {
+      box-shadow: none;
+      border-left-width: 0;
+      border-right-width: 0;
+    }
+    padding: 15px;
+    h3 {
+      color: $pascal-color;
+      font-size: 20px;
+      font-weight: 400;
+      margin: 0;
+    }
+    .press-col-image {
+      img {
+        max-width: 100px;
+        @include respond-below(sm) {
+          max-width: 50px;
+        }
+      }
+    }
+    .press-col-content {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .press-kit-container {
+    background: white;
+    border: 3px solid #666;
+    padding: 10px;
+  }
+}
