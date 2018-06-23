@@ -163,8 +163,7 @@ PascalCoin’s powerful architecture lays the strong foundation for large-scale 
 
 PascalCoin achieves all this by introducing a new cryptographic data-structure known as the SafeBox. The SafeBox compliments the Blockchain in a way that allows the Blockchain to be deleted whilst retaining its full cryptographic security.')
                     </div>
-                    <a class="btn readmore" href="{{route('get_started')}}" role="button">GET
-                        STARTED NOW </a>
+                    <a class="btn readmore" href="{{route('get_started')}}" role="button">@dt($dtGroup, 'get_started_now', 'GET STARTED NOW')</a>
                     <a href="https://github.com/PascalCoin/PascalCoin/releases"
                        target="_blank" role="button" class="btn readmore"><span
                                 class="fa fa-windows"></span> <span
