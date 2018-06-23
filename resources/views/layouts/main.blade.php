@@ -1,3 +1,6 @@
+<?php
+$dtGroup = 'layout';
+?>
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
@@ -7,11 +10,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="A completely original cryptocurrency with groundbreaking new technology called SafeBox">
+    <meta name="description" content="@dt($dtGroup, 'meta_description', 'A completely original cryptocurrency with groundbreaking new technology called SafeBox', false)">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>PascalCoin.com | {{strtoupper(trim(View::yieldContent('body-id')))}}</title>
+    <title>@dt($dtGroup, 'meta_base_title', 'PascalCoin.com', false) | {{strtoupper(trim(View::yieldContent('body-id')))}}</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{mix('css/app.css')}}" />
@@ -49,7 +52,7 @@
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">@dt($dtGroup, 'toggle_navigation', 'Toggle navigation')</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -65,7 +68,7 @@
 <div class="container">
 <section class="section-ticker">
         <span class="section-ticker__info">
-            <span class="section-ticker__info-label">USD:</span>
+            <span class="section-ticker__info-label">@dt($dtGroup, 'ticker_USD', 'USD:')</span>
             <span class="section-ticker__info-data">&dollar;{{number_format($cmc_USD->price, 2)}}</span>
         </span>
     <span class="section-ticker__info">
@@ -73,27 +76,27 @@
             <span class="section-ticker__info-data">{{number_format($cmc_BTC->price, 8)}}</span>
         </span>
     <span class="section-ticker__info">
-            <span class="section-ticker__info-label">Market Cap:</span>
+            <span class="section-ticker__info-label">@dt($dtGroup, 'ticker_market_cap', 'Market Cap:')</span>
             <span class="section-ticker__info-data">&dollar;{{number_format($cmc_USD->market_cap, 2)}} USD</span>
         </span>
     <span class="section-ticker__info">
-            <span class="section-ticker__info-label">Supply:</span>
+            <span class="section-ticker__info-label">@dt($dtGroup, 'ticker_supply', 'Supply:')</span>
             <span class="section-ticker__info-data">{{number_format($cmc_USD->supply)}} PASC</span>
         </span>
     <span class="section-ticker__info">
-            <span class="section-ticker__info-label">1 Hr:</span>
+            <span class="section-ticker__info-label">@dt($dtGroup, 'ticker_one_hour', '1 Hr:')</span>
             <span class="section-ticker__info-data section-ticker__info-data--{{$cmc_USD->percent_change_1h >= 0 ? 'up' : 'down'}}">
                 {{number_format($cmc_USD->percent_change_1h, 2)}}%
             </span>
         </span>
     <span class="section-ticker__info">
-            <span class="section-ticker__info-label">1 Day:</span>
+            <span class="section-ticker__info-label">@dt($dtGroup, 'ticker_one_day', '1 Day:')</span>
             <span class="section-ticker__info-data section-ticker__info-data--{{$cmc_USD->percent_change_24h >= 0 ? 'up' : 'down'}}">
                 {{number_format($cmc_USD->percent_change_24h, 2)}}%
             </span>
         </span>
     <span class="section-ticker__info">
-            <span class="section-ticker__info-label">7 Days:</span>
+            <span class="section-ticker__info-label">@dt($dtGroup, 'ticker_seven_days', '7 Days:')</span>
             <span class="section-ticker__info-data section-ticker__info-data--{{$cmc_USD->percent_change_7d >= 0 ? 'up' : 'down'}}">
                 {{number_format($cmc_USD->percent_change_7d, 2)}}%
             </span>
@@ -246,7 +249,7 @@
     </div>
     <div class="container">
         <div class="col-sm-12 copyright">
-            <p>All Copyright (c) 2018   <a href="{{route('home')}}" target="_blank">PascalCoin Foundation</a></p>
+            <p>@dt($dtGroup, 'copyright', 'All Copyright (c) 2018 [PascalCoin Foundation](https://www.pascalcoin.org)')</p>
         </div>
     </div>
 </div>

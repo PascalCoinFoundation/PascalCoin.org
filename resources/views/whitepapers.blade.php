@@ -1,3 +1,6 @@
+<?php
+$dtGroup = 'get_started';
+?>
 @extends('layouts.main')
 
 @section('body-id')
@@ -13,10 +16,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-xs-12">
-                    <h3 class="breadcrumb-title">Whitepapers</h3>
+                    <h3 class="breadcrumb-title">@dt($dtGroup, 'page_title', 'Whitepapers')</h3>
                     <ol class="breadcrumb">
-                        <li><a href="{{route('home')}}">Home</a></li>
-                        <li class="active">Whitepapers</li>
+                        <li><a href="{{route('home')}}">@dt($dtGroup, 'bc_home', 'Home')</a></li>
+                        <li class="active">@dt($dtGroup, 'bc_page', 'Whitepapers')</li>
                     </ol>
                 </div>
             </div>
@@ -30,7 +33,7 @@
             <div class="col-sm-12">
                 <div class="abouthead">
                     <!--h3 class="section-heading">Whitepapers</h3-->
-                    <p>Want a more indepth understanding of PascalCoin? Below you can download the Whitepapers which go into greater detail on the inner workings of PascalCoin, including the groundbreaking SafeBox technology.</p>
+                    <p>@dt($dtGroup, 'page_teaser', 'Want a more indepth understanding of PascalCoin? Below you can download the Whitepapers which go into greater detail on the inner workings of PascalCoin, including the groundbreaking SafeBox technology.')</p>
                     <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
                 </div>
             </div>
@@ -44,11 +47,11 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="abouthead">
-                        <h3 class="section-heading">Whitepaper Download</h3>
+                        <h3 class="section-heading">@dt($dtGroup, 'whitepaper_download_title', 'Whitepaper Download')</h3>
                         <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
                     <p class="text-center">
-                        <a class="version" href="/PascalCoinWhitePaperV2.pdf" target="_blank">Download Whitepaper V2<span>version 2.1, June 2017</span></a>
-                        <a class="version" href="/PascalCoin White Paper - EN.pdf" target="_blank">Download Whitepaper V1 <span>version 1.0 July 2016 </span></a>
+                        <a class="version" href="/PascalCoinWhitePaperV2.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v2_btn_w1', 'Download Whitepaper V2')<span>@dt($dtGroup, 'whitepaper_v2_btn_w2', 'version 2.1, June 2017')</span></a>
+                        <a class="version" href="/PascalCoin White Paper - EN.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v1_btn_w1', 'Download Whitepaper V1') <span>@dt($dtGroup, 'whitepaper_v1_btn_w2', 'version 1.0 July 2016')</span></a>
                     </p>
                     </div>
                 </div>
@@ -62,12 +65,12 @@
                 <a id="reliable"></a>
 
                 <div class="abouthead">
-                    <h3 class="section-heading">Extended Information</h3>
+                    <h3 class="section-heading">@dt($dtGroup, 'whitepaper_ex_title', 'Extended Information')</h3>
                     <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
             </div>
 
             <div class="col-sm-12">
-                <div class="row">
+                <div class="row">slider_1_word2
 
                     @foreach($contents as $content)
                     <div class="col-sm-12 text-center whitepapers2">

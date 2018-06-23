@@ -25,6 +25,13 @@ $(function() {
 
     // crete new page instance
     const $body = $("body");
+    $("dyn").on('click', function() {
+        window.open(
+            this.getAttribute('data-href'),
+            '_blank' // <- This is what makes it open in a new window.
+        );
+    });
+
     new pageMap[$body.attr('id')]($body);
 
     $('.navbar-default').stickUp();

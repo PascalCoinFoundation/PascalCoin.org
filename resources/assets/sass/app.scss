@@ -137,3 +137,27 @@ $breakpoints: (
     }
   }
 }
+
+
+dyn {
+  position: relative;
+  &:before {
+    top: 0;
+    z-index: 99999;
+    right: -24px;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    position: absolute;
+    font-family: FontAwesome;
+    content: "\f040";
+    display: none;
+    cursor: pointer;
+  }
+  &:hover {
+    &:before {
+      display: block;
+    }
+    cursor: pointer;
+  }
+}

@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\CoinMarketCap;
+use App\Service\DynamicTextService;
 use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
@@ -45,5 +46,12 @@ class AppServiceProvider extends ServiceProvider
         if ($this->app->environment() !== 'production') {
             $this->app->register(IdeHelperServiceProvider::class);
         }
+        $this->app->singleton(DynamicTextService::class, function() {
+            return new DynamicTextService();
+        });
+
+        \Blade::directive('dt', function ($expression) {
+            return '<?php echo app(' . DynamicTextService::class . '::class)->get(' . $expression . '); ?>';
+        });
     }
 }

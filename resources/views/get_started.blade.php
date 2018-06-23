@@ -1,3 +1,6 @@
+<?php
+$dtGroup = 'get_started';
+?>
 @extends('layouts.main')
 
 @section('body-id')
@@ -13,10 +16,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-xs-12">
-                    <h3 class="breadcrumb-title">Get Started</h3>
+                    <h3 class="breadcrumb-title">@dt($dtGroup, 'page_title', 'Get Started')</h3>
                     <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li class="active">Get Started</li>
+                        <li><a href="#">@dt($dtGroup, 'bc_home', 'Home')</a></li>
+                        <li class="active">@dt($dtGroup, 'bc_page', 'Get Started')</li>
                     </ol>
                 </div>
             </div>
@@ -33,7 +36,7 @@
             <div class="col-sm-12">
                 <div class="abouthead">
                     <!--h3 class="section-heading">Get Started</h3-->
-                    <p>So you're interested in PascalCoin? There's a few things you should know before you get started.</p>
+                    <p>@dt($dtGroup, 'page_teaser', 'So you\'re interested in PascalCoin? There\'s a few things you should know before you get started.')</p>
                     <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
             </div>
 

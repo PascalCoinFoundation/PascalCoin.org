@@ -1,3 +1,6 @@
+<?php
+$dtGroup = 'home';
+?>
 @extends('layouts.main')
 
 @section('body-id')
@@ -52,11 +55,9 @@
                                 <div>
                                     <div class="container" style="margin: 0">
                                         <div class="slider-wrap-data">
-                                            <div class="Think-Secure"><span class="sup">Infinite</span>
-                                                <span>Scaling</span></div>
-                                            <div class="thinkdata">The first cryptocurrency
-                                                that has broken the 100 transactions per
-                                                second barrier.
+                                            <div class="Think-Secure"><span class="sup">@dt($dtGroup, 'slider_1_word1', 'Infinite')</span>
+                                                <span>@dt($dtGroup, 'slider_1_word2', 'Scaling')</span></div>
+                                            <div class="thinkdata">@dt($dtGroup, 'slider_1_text', 'The first cryptocurrency that has broken the 100 transactions per second barrier.')
                                             </div>
 
                                         </div>
@@ -66,13 +67,9 @@
                                 <div>
                                     <div class="container" style="margin: 0">
                                         <div class="slider-wrap-data">
-                                            <div class="Think-Secure"><span class="sup">Next-Generation</span> <span>Cryptocurrency</span>
+                                            <div class="Think-Secure"><span class="sup">@dt($dtGroup, 'slider_2_word1', 'Next-Generation')</span> <span>@dt($dtGroup, 'slider_2_word2', 'Cryptocurrency')</span>
                                             </div>
-                                            <div class="thinkdata">Introducing
-                                                groundbreaking new technology called SafeBox
-                                            </div>
-
-
+                                            <div class="thinkdata">@dt($dtGroup, 'slider_2_text', 'Introducing groundbreaking new technology called SafeBox')</div>
                                         </div>
 
                                     </div>
@@ -80,11 +77,9 @@
                                 <div>
                                     <div class="container" style="margin: 0">
                                         <div class="slider-wrap-data">
-                                            <div class="Think-Secure"><span class="sup">Accounts</span> <span>are simple</span>
+                                            <div class="Think-Secure"><span class="sup">@dt($dtGroup, 'slider_3_word1', 'Accounts')</span> <span>@dt($dtGroup, 'slider_3_word1', 'are simple')</span>
                                             </div>
-                                            <div class="thinkdata">Use your email, domain
-                                                name or any other label as an account name
-                                            </div>
+                                            <div class="thinkdata">@dt($dtGroup, 'slider_3_text', 'Use your email, domain name or any other label as an account name')</div>
                                         </div>
                                     </div>
                                 </div>
@@ -104,12 +99,12 @@
                 <div class="col-sm-{{$news->count() > 0 ? '6' : '12'}}">
                     <div class="abouthead" style="overflow: hidden">
                         <!--img src="{{asset('images/logo.png')}}" alt="" style="opacity:.2"/-->
-                        <p style="margin: 0">An instant, feeless, infinitely scalable, and decentralized cryptocurrency with full privacy and smart contract capabilities - enabled by the SafeBox technology.</p>
+                        <p style="margin: 0">@dt($dtGroup, 'main_headline', 'An instant, feeless, infinitely scalable, and decentralized cryptocurrency with full privacy and smart contract capabilities - enabled by the SafeBox technology.')</p>
                     </div>
                 </div>
                 @if($news->count() > 0)
                 <div class="col-sm-6" id="news" style="padding-top: 10px;">
-                    <h3>Latest News
+                    <h3>@dt($dtGroup, 'latest_news_title', 'Latest News')
                     <a style="float: right" href="/feed"><i class="fa fa-rss fa-1"></i></a></h3>
                     @foreach($news as $newsItem)
                         <div class="row">
@@ -153,30 +148,20 @@
         <div class="container">
             <div class="row">
                 <div class="abouthead">
-                    <h3 class="section-heading">PascalCoin is an innovative
-                        cryptocurrency that extends the blockchain-paradigm</h3>
+                    <h3 class="section-heading">@dt($dtGroup, 'intro_headline', 'PascalCoin is an innovative cryptocurrency that extends the blockchain-paradigm')</h3>
                     <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt="">
                     </div>
                 </div>
                 <div class="col-sm-8">
 
                     <div class="leads">
-                        <p>Based on a groundbreaking and unique new idea in
-                            crypto, PascalCoin pioneers a new tier of
-                            scalability suitable for planetary-scale adoption.
-                            It is the first and only cryptocurrency to have
-                            broken the 100 transactions per second barrier!</p>
-                        <p>By offering simple account numbers that can be
-                            associated to emails, company names and domain
-                            names, payments have never been easier.</p>
-                        <p>PascalCoin’s powerful architecture lays the strong
-                            foundation for large-scale smart contracts in the
-                            form of Layer-2 protocols.</p>
-                        <p>PascalCoin achieves all this by introducing a new
-                            cryptographic data-structure known as the SafeBox.
-                            The SafeBox compliments the Blockchain in a way that
-                            allows the Blockchain to be deleted whilst retaining
-                            its full cryptographic security.</p>
+                        @dt($dtGroup, 'intro_text', 'Based on a groundbreaking and unique new idea in crypto, PascalCoin pioneers a new tier of scalability suitable for planetary-scale adoption. It is the first and only cryptocurrency to have broken the 100 transactions per second barrier!
+
+By offering simple account numbers that can be associated to emails, company names and domain names, payments have never been easier.
+
+PascalCoin’s powerful architecture lays the strong foundation for large-scale smart contracts in the form of Layer-2 protocols.
+
+PascalCoin achieves all this by introducing a new cryptographic data-structure known as the SafeBox. The SafeBox compliments the Blockchain in a way that allows the Blockchain to be deleted whilst retaining its full cryptographic security.')
                     </div>
                     <a class="btn readmore" href="{{route('get_started')}}" role="button">GET
                         STARTED NOW </a>
@@ -184,7 +169,7 @@
                        target="_blank" role="button" class="btn readmore"><span
                                 class="fa fa-windows"></span> <span
                                 class="fa fa-linux"></span> <span
-                                class="fa fa-apple"></span> Download Wallet </a>
+                                class="fa fa-apple"></span>@dt($dtGroup, 'download_wallet', 'Download Wallet')</a>
                 </div>
                 <div class="col-sm-4">
                     <iframe width="100%"
@@ -193,11 +178,7 @@
                     <iframe width="100%"
                             src="https://www.youtube.com/embed/_Md8zUt5lig?feature=oembed"
                             frameborder="0" allowfullscreen=""></iframe>
-                    <small><a href="https://www.youtube.com/watch?v=s8m8E01VXJ8" target="_blank">Click here</a> for a version with <u>chinese subtitles</u></small>
-                    <!--p><a class="alternate_download"
-                          href="https://sourceforge.net/projects/pascalcoin/"
-                          target="_blank">Alternate Download Site</a></p-->
-
+                    <small>@dt($dtGroup, 'video_china_linktext', '<a href="https://www.youtube.com/watch?v=s8m8E01VXJ8" target="_blank">Click here</a> for a version with _chinese subtitles_')</small>
                 </div>
 
             </div>
@@ -210,9 +191,8 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="abouthead">
-                        <h3 class="section-heading">Why Choose PascalCoin?</h3>
-                        <p>PascalCoin pioneers a new tier of scalability
-                            comparable to the VISA network</p>
+                        <h3 class="section-heading">@dt($dtGroup, 'why_choose_title', 'Why Choose PascalCoin?')</h3>
+                        <p>@dt($dtGroup, 'why_choose_teaser', 'PascalCoin pioneers a new tier of scalability comparable to the VISA network')</p>
                         <div class="mid-sep"><img src="{{asset('images/footsep.png')}}"
                                                   alt=""></div>
                     </div>
@@ -248,7 +228,7 @@
                 <div class="col-sm-12">
 
                     <div class="abouthead">
-                        <h3 class="section-heading">Coin Specifications</h3>
+                        <h3 class="section-heading">@dt($dtGroup, 'coin_specs_title', 'Coin Specifications')</h3>
                         <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div>
                     </div>
                 </div>
@@ -257,9 +237,9 @@
                         <div class="single-counter"
                              style="visibility: visible;">
                             <div class="counter-text">
-                                <p class="fact-number">42 <span>million</span>
+                                <p class="fact-number">@dt($dtGroup, 'coin_specs_box1_word1', '42') <span>@dt($dtGroup, 'coin_specs_box1_word2', 'million')</span>
                                 </p>
-                                <h4>Maximum supply</h4>
+                                <h4>@dt($dtGroup, 'coin_specs_box1_sub', 'Maximum supply')</h4>
                             </div>
                         </div>
                     </div>
@@ -269,9 +249,9 @@
                         <div class="single-counter"
                              style="visibility: visible;">
                             <div class="counter-text">
-                                <p class="fact-number"><span>SHA2-</span> 256D
+                                <p class="fact-number"><span>@dt($dtGroup, 'coin_specs_box2_word1', 'SHA2-')</span> @dt($dtGroup, 'coin_specs_box2_word2', '256D')
                                 </p>
-                                <h4>Algorithm </h4>
+                                <h4>@dt($dtGroup, 'coin_specs_box2_sub', 'Algorithm')</h4>
                             </div>
                         </div>
                     </div>
@@ -280,8 +260,8 @@
                     <div class="row">
                         <div class="single-counter">
                             <div class="counter-text">
-                                <p class="fact-number">5 <span>Minutes</span></p>
-                                <h4>Block Time</h4>
+                                <p class="fact-number">@dt($dtGroup, 'coin_specs_box3_word1', '5') <span>@dt($dtGroup, 'coin_specs_box3_word2', 'Minutes')</span></p>
+                                <h4>@dt($dtGroup, 'coin_specs_box3_sub', 'Block Time')</h4>
                             </div>
                         </div>
                     </div>
@@ -293,8 +273,8 @@
                                 <i class="bi bi-emo-smile"></i>
                             </div> -->
                             <div class="counter-text">
-                                <p class="fact-number">40 <span>PASC</span></p>
-                                <h4>Block Rewards</h4>
+                                <p class="fact-number">@dt($dtGroup, 'coin_specs_box4_word1', '40') <span>@dt($dtGroup, 'coin_specs_box4_word2', 'PASC')</span></p>
+                                <h4>@dt($dtGroup, 'coin_specs_box4_sub', 'Block Rewards')</h4>
                             </div>
                         </div>
                     </div>
@@ -308,7 +288,7 @@
         <div class="container">
 
             <div class="abouthead">
-                <h3 class="section-heading">Roadmap</h3>
+                <h3 class="section-heading">@dt($dtGroup, 'rodmap_title', 'Roadmap')</h3>
                 <!--p>Now and into the future we are committed to improving the
                     availability and development of PascalCoin. Here you can see
                     our current broad-strokes roadmap for future development and
@@ -451,9 +431,8 @@
         <div class="container">
             <div class="subsc">
                 <div>
-                        <h3 style="font-weight: 700; margin-top: 0; color: white;">Subscribe Newsletter</h3>
-                    <p>Subscribe to our email newsletter for useful tips and
-                        valuable resources.</p>
+                        <h3 style="font-weight: 700; margin-top: 0; color: white;">@dt($dtGroup, 'nl_title', 'Subscribe Newsletter')</h3>
+                    <p>@dt($dtGroup, 'nl_teaser', 'Subscribe to our email newsletter for useful tips and valuable resources.')</p>
                 </div>
             </div>
 
@@ -462,14 +441,14 @@
                     <div class="sub-tex">
                         <div class="input-group">
                             @csrf
-                            <input type="text" id="subscribe_email" class="form-control" placeholder="Enter your email here...">
+                            <input type="text" id="subscribe_email" class="form-control" placeholder="@dt($dtGroup, 'nl_placeholder', 'Enter your email here...', false)">
                             <span class="input-group-btn">
-                                <button type="button" id="subscribe_button" class="btn btn-default subscribe-btn" data-target="{{route('newsletter-submit')}}">Subscribe</button>
+                                <button type="button" id="subscribe_button" class="btn btn-default subscribe-btn" data-target="{{route('newsletter-submit')}}">@dt($dtGroup, 'nl_button', 'Subscribe', true)</button>
                             </span>
                         </div>
                     </div>
                 </div>
-                <div id="subscribe_success" style="display: none;color: #f79321; padding: 4px; font-weight: 400; background: white;">Thank you for your subscription.</div>
+                <div id="subscribe_success" style="display: none;color: #f79321; padding: 4px; font-weight: 400; background: white;">@dt($dtGroup, 'nl_thank_you', 'Thank you for your subscription.')</div>
                 <div id="subscribe_error" style="display: none;color: red; padding: 4px; font-weight: 400; background: white;"></div>
             </div>
         </div>
@@ -479,10 +458,8 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="abouthead">
-                        <h3 class="section-heading">Frequently Asked
-                            Questions</h3>
-                        <div class="mid-sep"><img src="{{asset('images/footsep.png')}}"
-                                                  alt=""></div>
+                        <h3 class="section-heading">@dt($dtGroup, 'faq_title', 'Frequently Asked Questions')</h3>
+                        <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div>
                     </div>
                 </div>
 
