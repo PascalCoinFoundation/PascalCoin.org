@@ -70,7 +70,7 @@ $dtGroup = 'get_started';
             </div>
 
             <div class="col-sm-12">
-                <div class="row">slider_1_word2
+                <div class="row">
 
                     @foreach($contents as $content)
                     <div class="col-sm-12 text-center whitepapers2">
