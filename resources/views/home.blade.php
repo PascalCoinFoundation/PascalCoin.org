@@ -104,7 +104,7 @@
                 <div class="col-sm-{{$news->count() > 0 ? '6' : '12'}}">
                     <div class="abouthead" style="overflow: hidden">
                         <!--img src="{{asset('images/logo.png')}}" alt="" style="opacity:.2"/-->
-                        <p style="margin: 0">An instant, feeless, and infinitely scalable cryptocurrency with full privacy and smart contract capabilities - enabled by the SafeBox technology.</p>
+                        <p style="margin: 0">An instant, feeless, infinitely scalable, and decentralized cryptocurrency with full privacy and smart contract capabilities - enabled by the SafeBox technology.</p>
                     </div>
                 </div>
                 @if($news->count() > 0)
@@ -249,21 +249,17 @@
 
                     <div class="abouthead">
                         <h3 class="section-heading">Coin Specifications</h3>
-                        <div class="mid-sep"><img src="{{asset('images/footsep.png')}}"
-                                                  alt=""></div>
+                        <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="row">
                         <div class="single-counter"
                              style="visibility: visible;">
-                            <!-- <div class="counter-icon">
-                            <i class="bi bi-crown"></i>
-                        </div> -->
                             <div class="counter-text">
                                 <p class="fact-number">42 <span>million</span>
                                 </p>
-                                <h4>Max Coin</h4>
+                                <h4>Maximum supply</h4>
                             </div>
                         </div>
                     </div>
@@ -272,9 +268,6 @@
                     <div class="row">
                         <div class="single-counter"
                              style="visibility: visible;">
-                            <!--<div class="counter-icon">
-                                    <i class="bi bi-delivery-van"></i>
-                                </div> -->
                             <div class="counter-text">
                                 <p class="fact-number"><span>SHA2-</span> 256D
                                 </p>
@@ -286,11 +279,8 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="row">
                         <div class="single-counter">
-                            <!--  <div class="counter-icon">
-                                <i class="bi bi-cup-coffee"></i>
-                            </div> -->
                             <div class="counter-text">
-                                <p class="fact-number">5 <span>Min</span></p>
+                                <p class="fact-number">5 <span>Minutes</span></p>
                                 <h4>Block Time</h4>
                             </div>
                         </div>
