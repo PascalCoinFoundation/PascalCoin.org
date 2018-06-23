@@ -98,17 +98,17 @@
     </div>
     @endif
 
-    <div class="content-section-b" style="box-shadow: inset 0 -10px 10px -10px #d0d0d0">
+    <div class="content-section-b" style="padding-top: 10px; box-shadow: inset 0 -10px 10px -10px #d0d0d0">
         <div class="container">
             <div class="row">
                 <div class="col-sm-{{$news->count() > 0 ? '6' : '12'}}">
                     <div class="abouthead" style="overflow: hidden">
-                        <img src="{{asset('images/logo.png')}}" alt=""/>
-                        <p>A completely original cryptocurrency with groundbreaking new technology called SafeBox</p>
+                        <!--img src="{{asset('images/logo.png')}}" alt="" style="opacity:.2"/-->
+                        <p style="margin: 0">An instant, feeless, and infinitely scalable cryptocurrency with full privacy and smart contract capabilities - enabled by the SafeBox technology.</p>
                     </div>
                 </div>
                 @if($news->count() > 0)
-                <div class="col-sm-6" id="news">
+                <div class="col-sm-6" id="news" style="padding-top: 10px;">
                     <h3>Latest News
                     <a style="float: right" href="/feed"><i class="fa fa-rss fa-1"></i></a></h3>
                     @foreach($news as $newsItem)
