@@ -77,7 +77,7 @@ $dtGroup = 'home';
                                 <div>
                                     <div class="container" style="margin: 0">
                                         <div class="slider-wrap-data">
-                                            <div class="Think-Secure"><span class="sup">@dt($dtGroup, 'slider_3_word1', 'Accounts')</span> <span>@dt($dtGroup, 'slider_3_word1', 'are simple')</span>
+                                            <div class="Think-Secure"><span class="sup">@dt($dtGroup, 'slider_3_word1', 'Accounts')</span> <span>@dt($dtGroup, 'slider_3_word2', 'are simple')</span>
                                             </div>
                                             <div class="thinkdata">@dt($dtGroup, 'slider_3_text', 'Use your email, domain name or any other label as an account name')</div>
                                         </div>
