@@ -9,6 +9,7 @@
 
     <!-- FullScreen -->
     <div class="intro-header intro-subheader">
+        <div class="pasc-bg"></div>
 
         <div id="slider_container">
             <div class="container">

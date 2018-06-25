@@ -44,6 +44,7 @@ $dtGroup = 'home';
         </div><!-- /.modal -->
     @else
     <div class="intro-header">
+        <div class="pasc-bg"></div>
         <div style="min-height: 50px;">
 
             <div class="container" style="overflow: hidden;">
@@ -333,9 +334,6 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
                                 <p>VOTING: SafeBox Voting (phase 1)</p>
                             </li>
                             <li><i class="fa fa-check-square"></i>
-                                <p>MULTISIG: Schnorr crypto-library</p>
-                            </li>
-                            <li><i class="fa fa-check-square"></i>
                                 <p>ANON: In-protocol PASC & PASA
                                     exchange</p></li>
                             <li><i class="fa fa-check-square"></i>
@@ -356,6 +354,9 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
                     <h3>Our Goals</h3>
                     <div>
                         <ul class="roadmap goals">
+                            <li><i class="fa fa-square"></i>
+                                <p>MULTISIG: Schnorr crypto-library</p>
+                            </li>
                             <li><i class="fa fa-square"></i>
                                 <p>CORE: Checkpoint Torrenting</p></li>
                             <li><i class="fa fa-square"></i>
