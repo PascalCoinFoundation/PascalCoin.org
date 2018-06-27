@@ -155,7 +155,7 @@ class IndexController extends Controller
             'message' => $request->get('message'),
         ]);
 
-        \Mail::to(getenv('MAIL_USERNAME'))->send(new \App\Mail\Contact($contact));
+        \Mail::to(getenv('MAIL_CONTACT_TO'))->send(new \App\Mail\Contact($contact));
 
         return response()->json([
             'success' => true
