@@ -57,7 +57,9 @@ class DynamicTextService
         }
 
         $content = $this->parseDown->parse($text->content);
-        $content = substr($content, 3, -4);
+        if(substr($content, 0, 3) === '<p>') {
+            $content = substr($content, 3, -4);
+        }
         if(\Auth::check() && $showTags !== false) {
             $content = '<dyn data-href="/admin/dynamic-texts/' . $text->id . '/edit" data-group="' . $group . '"  data-key="' . $key. '">' . $content . '</dyn>';
         }
