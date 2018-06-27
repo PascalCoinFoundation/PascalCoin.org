@@ -175,6 +175,10 @@ $dtGroup = 'layout';
                                 </li>
                                 <li>
                                     <i class="fa fa-angle-right"></i>
+                                    <a href="https://www.cryptomonster.co.uk/buy-pascal-coin" target="_blank">cryptomonster (supports bank-wires)</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right"></i>
                                     <a href="https://www.pascwallet.com/Market/MarketPurchase" target="_blank"><span class="site-footer__link-subtext">PascWallet (PASA exchange)</span></a>
                                 </li>
                                 <li>
