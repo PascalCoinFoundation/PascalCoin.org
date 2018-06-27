@@ -112,85 +112,80 @@ $dtGroup = 'layout';
                 <div class="col-md-4 col-sm-6">
                     <div class="footer-tags-widget-area footer-top-content">
                         <div class="footer-widget-heading">
-                            <h3>Navigation</h3>
+                            <h3>@dt($dtGroup, 'footer_navigation_title', 'Navigation')</h3>
                         </div>
                         <div class="footer-widget-content">
-                            <ul class="links">
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="{{route('home')}}">Home</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="{{route('get_started')}}">Get Started</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="{{route('whitepapers')}}">Whitepapers</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="{{route('pips')}}">PIPs</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="{{route('projects')}}">Community Projects</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="{{route('voting')}}">Voting</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="{{route('contact')}}">Contact</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://github.com/PascalCoin/PascalCoin/releases" target="_blank">Download Wallet</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="http://explorer.pascalcoin.org" target="_blank">Explorer</a>
-                                </li>
-
-
-                            </ul>
+                            @dt($dtGroup, 'footer_navigation_content', '
+<ul class="links">
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="/">Home</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="/get_started">Get Started</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="/whitepapers">Whitepapers</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="/development/pips">PIPs</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="/development/projects">Community Projects</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="/contact">Contact</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://github.com/PascalCoin/PascalCoin/releases" target="_blank">Download Wallet</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="http://explorer.pascalcoin.org" target="_blank">Explorer</a>
+    </li>
+</ul>')
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="footer-top-content">
                         <div class="footer-widget-heading">
-                            <h3>Exchanges</h3>
+                            <h3>@dt($dtGroup, 'footer_exchanges_title', 'Exchanges')</h3>
                         </div>
                         <div class="footer-widget-content">
-                            <ul class="links">
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://poloniex.com/exchange#btc_pasc" target="_blank">Poloniex</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://www.qbtc.com/trade" target="_blank">QBTC</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://www.cryptomonster.co.uk/buy-pascal-coin" target="_blank">CryptoMonster (supports bank-wires)</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://www.pascwallet.com/Market/MarketPurchase" target="_blank"><span class="site-footer__link-subtext">PascWallet (PASA exchange)</span></a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="http://www.getpasa.com/" target="_blank"><span class="site-footer__link-subtext">GetPASA (get your first account)</span></a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://markets.bisq.network/?market=pasc_btc" target="_blank">Bisq (decentralised exchange)</a>
-                                </li>
-
-                            </ul>
+                            @dt($dtGroup, 'footer_exchanges_content', '
+<ul class="links">
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://poloniex.com/exchange#btc_pasc" target="_blank">Poloniex</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://www.qbtc.com/trade" target="_blank">QBTC</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://www.cryptomonster.co.uk/buy-pascal-coin" target="_blank">CryptoMonster (supports bank-wires)</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://www.pascwallet.com/Market/MarketPurchase" target="_blank"><span class="site-footer__link-subtext">PascWallet (PASA exchange)</span></a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="http://www.getpasa.com/" target="_blank"><span class="site-footer__link-subtext">GetPASA (get your first account)</span></a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://markets.bisq.network/?market=pasc_btc" target="_blank">Bisq (decentralised exchange)</a>
+    </li>
+</ul>')
 
                         </div>
                     </div>
@@ -199,52 +194,52 @@ $dtGroup = 'layout';
                 <div class="col-md-4 col-sm-6">
                     <div class="footer-tags-widget-area footer-top-content">
                         <div class="footer-widget-heading">
-                            <h3>Social</h3>
+                            <h3>@dt($dtGroup, 'footer_social_title', 'Social')</h3>
                         </div>
                         <div class="footer-widget-content">
-                            <ul class="links">
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://twitter.com/PascalCoin" target="_blank">Follow us on Twitter</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://www.facebook.com/PascalCoin-850645181770093" target="_blank">Follow us on Facebook</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://www.instagram.com/pascalcoinofficial/" target="_blank">Follow us on Instagram</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://medium.com/@pascalcoinmktg" target="_blank">Follow our blog on Medium</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://discord.gg/sJqcgtD" target="_blank">Join our community on Discord</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://www.reddit.com/r/pascalcoin/" target="_blank">Subscribe to our SubReddit</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://bitcointalk.org/index.php?topic=1583719.0" target="_blank">Read our BitcoinTalk Thread</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://github.com/PascalCoin/PascalCoin" target="_blank">Fork the project on GitHub</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="https://t.me/pascalcoin" target="_blank">Join us on Telegram</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="http://www.qq.com/" target="_blank">Join us on QQ<span class="site-footer__link-subtext">Group 280212560</span></a>
-                                </li>
-
-                            </ul>
+                            @dt($dtGroup, 'footer_social_content', '
+<ul class="links">
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://twitter.com/PascalCoin" target="_blank">Follow us on Twitter</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://www.facebook.com/PascalCoin-850645181770093" target="_blank">Follow us on Facebook</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://www.instagram.com/pascalcoinofficial/" target="_blank">Follow us on Instagram</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://medium.com/@pascalcoinmktg" target="_blank">Follow our blog on Medium</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://discord.gg/sJqcgtD" target="_blank">Join our community on Discord</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://www.reddit.com/r/pascalcoin/" target="_blank">Subscribe to our SubReddit</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://bitcointalk.org/index.php?topic=1583719.0" target="_blank">Read our BitcoinTalk Thread</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://github.com/PascalCoin/PascalCoin" target="_blank">Fork the project on GitHub</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://t.me/pascalcoin" target="_blank">Join us on Telegram</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="http://www.qq.com/" target="_blank">Join us on QQ<span class="site-footer__link-subtext">Group 280212560</span></a>
+    </li>
+</ul>')
                         </div>
                     </div>
                 </div>

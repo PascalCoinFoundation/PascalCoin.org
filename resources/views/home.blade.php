@@ -328,7 +328,7 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
                                 <p>CORE: Add 20% developer reward</p>
                             </li>
                             <li><i class="fa fa-check-square"></i>
-                                <p>VOTING: Blockhain voting website</p>
+                                <p>VOTING: Blockchain voting website</p>
                             </li>
                             <li><i class="fa fa-check-square"></i>
                                 <p>VOTING: SafeBox Voting (phase 1)</p>
