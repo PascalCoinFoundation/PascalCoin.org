@@ -28,19 +28,6 @@
     </div>
 
 
-    <div class="content-section-b">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="abouthead">
-                        <!--h3 class="section-heading">Projects</h3-->
-                        <p>PascalCoin Voting results.</p>
-                        <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="sb-site">
         <div class="boxed">
 
