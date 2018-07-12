@@ -30,10 +30,7 @@
 
     <div id="sb-site">
         <div class="boxed">
-
             <iframe src="https://www.pascalexplorer.com/Voting/Embed" frameborder="0" scrolling="no" style="width: 100%; height: 3650px;" ></iframe>
-            <iframe src="https://www.pascalcoin.org/tmp/frame.html" frameborder="0" scrolling="no" style="width: 100%; height: 100px; "></iframe>
-
         </div>
     </div>
 @endsection
