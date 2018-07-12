@@ -25,7 +25,7 @@ class Voting
         var iframes, len, i = 0;
 
         // only receive messages from this domain
-        var senderDomains = ['https://www.pascalexplorer.com', 'https://www.pascalcoin.org'];
+        var senderDomains = ['https://www.pascalexplorer.com', 'https://pascalexplorer.com', 'https://pascalcoin.org', 'https://www.pascalcoin.org'];
 
         if (senderDomains.indexOf(event.origin) !== -1 && eventName === 'resize') {
             iframes = document.getElementsByTagName('iframe');
