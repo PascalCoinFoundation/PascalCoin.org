@@ -32,7 +32,7 @@
         <div class="boxed">
 
             <iframe src="https://www.pascalexplorer.com/Voting/Embed" frameborder="0" scrolling="no" style="width: 100%; height: 3650px;" ></iframe>
-            <iframe src="http://46.101.196.206/pasc/iframe.html" frameborder="0" scrolling="no" style="width: 100%; height: 100px; "></iframe>
+            <iframe src="https://www.pascalcoin.org/tmp/frame.html" frameborder="0" scrolling="no" style="width: 100%; height: 100px; "></iframe>
 
         </div>
     </div>
