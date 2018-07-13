@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Extend\ParsedownExt;
 use App\GetStartedContent;
 use App\HomeBox;
 use App\News;
@@ -123,7 +124,7 @@ class IndexController extends Controller
     {
         return view('project', [
             'project' => $project,
-            'markdown' =>  \Parsedown::instance()->parse($project->description)
+            'markdown' =>  ParsedownExt::instance()->parse($project->description)
         ]);
     }
 
@@ -221,7 +222,7 @@ class IndexController extends Controller
                 continue;
             }
             $pipData = $pipItem;
-            $pipText = \Parsedown::instance()->parse(\Storage::get('PIP/' . $pipData['pip'] . '.md'));
+            $pipText = ParsedownExt::instance()->parse(\Storage::get('PIP/' . $pipData['pip'] . '.md'));
 
             // rewrite resource links
             $pipText = str_replace('resources/PIP-', asset('storage/PIP/resources/PIP-'), $pipText);
@@ -248,7 +249,7 @@ class IndexController extends Controller
      */
     public function rpc(Request $request)
     {
-        $rpc = \Parsedown::instance()->parse(\Storage::get('RPC.md'));
+        $rpc = ParsedownExt::instance()->parse(\Storage::get('RPC.md'));
         return view('rpc', ['rpc' => $rpc]);
     }
 
@@ -260,7 +261,7 @@ class IndexController extends Controller
      */
     public function exchange(Request $request)
     {
-        $exchange = \Parsedown::instance()->parse(\Storage::get('exchange.md'));
+        $exchange = ParsedownExt::instance()->parse(\Storage::get('exchange.md'));
         return view('exchange', ['exchange' => $exchange]);
     }
 
