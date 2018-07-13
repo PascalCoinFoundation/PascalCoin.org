@@ -75,7 +75,7 @@ $dtGroup = 'get_started';
 
                     @foreach($contents as $content)
                     <div class="col-sm-12 text-center whitepapers2">
-                        <a id="wp_{{$content->id}}"></a>
+                        <h3 id="wp_{{$content->id}}" style="visibility: hidden"></h3>
                         <div class="single-feature">
                             <div class="whitepapers_icon">
                                 <div class="whitepapers_rotate whitepapers_rotate2" style="background-image: url('{{asset('storage/' . $content->icon)}}')"></div>

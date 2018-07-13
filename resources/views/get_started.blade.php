@@ -45,7 +45,7 @@ $dtGroup = 'get_started';
                 <div class="row">
                     @foreach($contents as $content)
                     <div class="col-sm-12 text-center get_started1">
-                        <a id="wp_{{$content->id}}"></a>
+                        <h3 id="wp_{{$content->id}}" style="visibility: hidden"></h3>
                         <div class="single-feature">
                             <div class="get_started_icon">
                                 <div class="get_started_rotate get_started_rotate1" style="background-image: url('{{asset('storage/' . $content->icon)}}')"></div>
