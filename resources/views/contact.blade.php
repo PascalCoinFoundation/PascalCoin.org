@@ -118,7 +118,8 @@ $dtGroup = 'contact';
         </div>
 
         <div class="form-group">
-
+            {!! NoCaptcha::display() !!}
+            <p class="error text-left" style="display: none" id="captcha-error"></p>
             <div class="col-md-12">
                 <!-- <button type="submit" class="btn btn-warning pull-right">Submit <span class="glyphicon glyphicon-send"></span></button> -->
                 <input name="contactus" type="submit" class="btn btn-warning pull-right" value="@dt($dtGroup, 'form_submit', 'Submit', false)">

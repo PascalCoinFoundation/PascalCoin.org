@@ -18,6 +18,7 @@ $dtGroup = 'layout';
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{mix('css/app.css')}}" />
+{!! NoCaptcha::renderJs() !!}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121201459-1"></script>

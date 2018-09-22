@@ -140,6 +140,7 @@ class IndexController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email',
             'message' => 'required',
+            'g-recaptcha-response' => 'required|captcha'
         ]);
 
         if ($validator->fails()) {

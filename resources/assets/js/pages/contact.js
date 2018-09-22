@@ -50,6 +50,11 @@ class Contact
     {
         if(response.success === false) {
             $.each(response.errors, (field, messages) => this.showFieldError(field, messages));
+            if(response.errors['g-recaptcha-response']) {
+                $('#captcha-error').show();
+            } else {
+                $('#captcha-error').hide();
+            }
             this.$error.show();
             return;
         }
