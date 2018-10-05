@@ -93,6 +93,15 @@ $dtGroup = 'home';
                                         </div>
                                     </div>
                                 </div>
+                                <div>
+                                    <div class="container" style="margin: 0">
+                                        <div class="slider-wrap-data">
+                                            <div class="Think-Secure"><span class="sup">@dt($dtGroup, 'slider_5_word1', 'ASIC & GPU')</span> <span>@dt($dtGroup, 'slider_5_word2', 'Resistant')</span>
+                                            </div>
+                                            <div class="thinkdata">@dt($dtGroup, 'slider_5_text', 'PascalCoin pioneers RandomHash, the very first successful CPU-native optimization that prevents mining centralization.')</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
