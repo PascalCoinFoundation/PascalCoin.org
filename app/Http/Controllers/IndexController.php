@@ -15,6 +15,7 @@ use App\Projects;
 use App\WhitePaperContent;
 use Illuminate\Http\Request;
 use Spatie\Newsletter\Newsletter;
+use TCG\Voyager\Models\Menu;
 
 /**
  * Class IndexController
@@ -192,6 +193,16 @@ class IndexController extends Controller
         return response()->json([
             'success' => true
         ]);
+    }
+
+    /**
+     * Delegates the request to the first submenu item.
+     *
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function development()
+    {
+        return redirect()->route('exchange');
     }
 
     /**

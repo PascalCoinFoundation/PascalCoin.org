@@ -22,6 +22,7 @@ Route::get('/funding-transparency', 'IndexController@fundingTransparency')->name
 Route::post('/contact', 'IndexController@contactSubmit')->name('contact-submit');
 Route::post('/newsletter', 'IndexController@newsletterSubmit')->name('newsletter-submit');
 
+Route::get('/development', 'IndexController@development')->name('development');
 Route::get('/development/pips', 'IndexController@pips')->name('pips');
 Route::get('/development/pips/pip-{pip}', 'IndexController@pip')->name('pip');
 Route::get('/development/projects', 'IndexController@projects')->name('projects');
