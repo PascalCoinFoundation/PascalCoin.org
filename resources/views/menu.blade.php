@@ -49,7 +49,7 @@
     @endphp
 
     <li class="{{ $listItemClass }}">
-        <a href="{{ url($item->link()) }}" target="{{ $item->target }}" style="{{ $styles }}" {!! $linkAttributes or '' !!}>
+        <a href="{{$item->link() == '' ? '#' : url($item->link()) }}" data-link="{{$item->link()}}" target="{{ $item->target }}" style="{{ $styles }}" {!! $linkAttributes or '' !!}>
             {!! $icon !!}
             <span>{{ $item->title }}</span>
             {!! $caret !!}
