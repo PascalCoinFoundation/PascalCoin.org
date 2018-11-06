@@ -38,6 +38,13 @@ class DumpCMC extends Command
      */
     public function handle()
     {
+        $date = new \DateTime();
+        $date->modify('-48 hours');
+        $formatted_date = $date->format('Y-m-d H:i:s');
+
+        CoinMarketCap::where('created_at','<=', $formatted_date)->get()->each->delete();
+
+
         $cfg = config('pascal.cmc');
 
         foreach($cfg['currencies'] as $symbol)

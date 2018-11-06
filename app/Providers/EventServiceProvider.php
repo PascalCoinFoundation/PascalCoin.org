@@ -2,9 +2,6 @@
 
 namespace App\Providers;
 
-use App\Listeners\CronEventListener;
-use Illuminate\Console\Events\CommandFinished;
-use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
@@ -17,9 +14,6 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         'App\Events\Event' => [
             'App\Listeners\EventListener',
-        ],
-        CommandFinished::class => [
-            CronEventListener::class
         ]
     ];
 
