@@ -1,5 +1,18 @@
 @extends('layouts.main')
 
+
+@section('meta_keywords')
+    {{$content->meta_keywords}}
+@endsection
+@section('page_title')
+    {{$content->title}}
+@endsection
+
+
+@section('meta_description')
+    {{$content->meta_description}}
+@endsection
+
 @section('body-id')
     content
 @endsection

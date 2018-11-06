@@ -10,12 +10,25 @@ $dtGroup = 'layout';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    @if(View::getSection('meta_keywords') === null)
+        <meta name="keywords" content="@dt($dtGroup, 'meta_keywords', 'PascalCoin, BlockChain, Cryptocurrency, SafeBox, revolution', false)">
+    @else
+        <meta name="keywords" content="{{trim(View::yieldContent('meta_keywords'))}}">
+    @endif
+    @if(View::getSection('meta_description') === null)
     <meta name="description" content="@dt($dtGroup, 'meta_description', 'A completely original cryptocurrency with groundbreaking new technology called SafeBox', false)">
-    <meta name="author" content="">
+    @else
+        <meta name="description" content="{{trim(View::yieldContent('meta_description'))}}">
+    @endif
+
+    <meta name="author" content="PascalCoin">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@dt($dtGroup, 'meta_base_title', 'PascalCoin.com', false) | {{strtoupper(trim(View::yieldContent('body-id')))}}</title>
-
+    @if(View::getSection('page_title') === null)
+        <title>@dt($dtGroup, 'meta_base_title', 'PascalCoin.org', false) | {{strtoupper(trim(View::yieldContent('body-id')))}}</title>
+    @else
+        <title>@dt($dtGroup, 'meta_base_title', 'PascalCoin.org', false) | {{trim(View::yieldContent('page_title'))}}</title>
+    @endif
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{mix('css/app.css')}}" />
 {!! NoCaptcha::renderJs() !!}
