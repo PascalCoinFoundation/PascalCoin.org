@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('pascal:cmc')->everyFiveMinutes();
+        $schedule->command('pascal:cmc')->twiceDaily();
         $schedule->command('pascal:rpc')->daily();
         $schedule->command('pascal:exchange')->daily();
         $schedule->command('pascal:pip')->hourly();
