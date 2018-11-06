@@ -9,7 +9,7 @@
         "boaideas/laravel-cli-create-user": "^1.2",
         "fideloper/proxy": "^4.0",
         "graham-campbell/github": "^7.3",
-        "laravel/framework": "5.6.*",
+        "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "parsedown/laravel": "^1.1",
         "php-http/guzzle6-adapter": "^1.1",
