@@ -50,7 +50,7 @@ $dtGroup = 'get_started';
                             <div class="get_started_icon">
                                 <div class="get_started_rotate get_started_rotate1" style="background-image: url('{{asset('storage/' . $content->icon)}}')"></div>
                             </div>
-                            <div class="get_started_description">
+                            <div class="get_started_description md">
                                 <h3 class="Securehead">{{$content->title}}</h3>
                                 <div class="midarrow"></div>
                                 @parsedown($content->content)

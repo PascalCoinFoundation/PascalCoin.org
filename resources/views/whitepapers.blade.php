@@ -80,7 +80,7 @@ $dtGroup = 'get_started';
                             <div class="whitepapers_icon">
                                 <div class="whitepapers_rotate whitepapers_rotate2" style="background-image: url('{{asset('storage/' . $content->icon)}}')"></div>
                             </div>
-                            <div class="whitepapers_description">
+                            <div class="whitepapers_description md">
                                 <h3 class="Securehead">{{$content->title}}</h3>
                                 <div class="midarrow"></div>
                                 <p>

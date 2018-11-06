@@ -123,6 +123,9 @@ $breakpoints: (
 @import 'pages/press';
 
 .md {
+  img {
+    max-width: 100%;
+  }
   text-align: left;
   padding: 20px;
   h1 {
