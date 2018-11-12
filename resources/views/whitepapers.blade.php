@@ -57,7 +57,7 @@ $dtGroup = 'whitepapers';
                     @foreach($contents as $content)
                         @if($content->pdf !== null)
                             <p class="text-center">
-                                <a class="version" href="{{asset('storage/' . json_decode($content->pdf, true)[0]['download_link'])}}" target="_blank">{{$content->pdf_btn_title}}</a>
+                                <a  style="height: auto; padding: 10px;" class="version" href="{{asset('storage/' . json_decode($content->pdf, true)[0]['download_link'])}}" target="_blank">{{$content->pdf_btn_title}}</a>
                             </p>
                         @endif
                     @endforeach
