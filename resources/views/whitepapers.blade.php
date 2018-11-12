@@ -49,18 +49,18 @@ $dtGroup = 'whitepapers';
                 <div class="col-sm-12">
                     <div class="abouthead">
                         <h3 class="section-heading">@dt($dtGroup, 'whitepaper_download_title', 'Whitepaper Download')</h3>
-                        <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
-                    <p class="text-center">
-                        <a class="version" href="/PascalCoinWhitePaperV2.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v2_btn_w1', 'Download Whitepaper V2')<span>@dt($dtGroup, 'whitepaper_v2_btn_w2', 'version 2.1, June 2017')</span></a>
-                        <a class="version" href="/PascalCoin White Paper - EN.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v1_btn_w1', 'Download Whitepaper V1') <span>@dt($dtGroup, 'whitepaper_v1_btn_w2', 'version 1.0 July 2016')</span></a>
-                    </p>
+                        <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div>
+                        <p class="text-center">
+                            <a class="version" href="/PascalCoinWhitePaperV2.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v2_btn_w1', 'Download Whitepaper V2')<span>@dt($dtGroup, 'whitepaper_v2_btn_w2', 'version 2.1, June 2017')</span></a>
+                            <a class="version" href="/PascalCoin White Paper - EN.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v1_btn_w1', 'Download Whitepaper V1') <span>@dt($dtGroup, 'whitepaper_v1_btn_w2', 'version 1.0 July 2016')</span></a>
+                        </p>
                     @foreach($contents as $content)
                         @if($content->pdf !== null)
-                            <h3 class="section-heading">{{$content->title}}</h3>
-                            <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div></div>
-                            <p class="text-center">
-                                <a  style="height: auto; padding: 10px;" class="version" href="{{asset('storage/' . json_decode($content->pdf, true)[0]['download_link'])}}" target="_blank">{{$content->pdf_btn_title}}</a>
-                            </p>
+                        <h3 class="section-heading">{{$content->title}}</h3>
+                        <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div>
+                        <p class="text-center">
+                            <a  style="height: auto; padding: 10px;" class="version" href="{{asset('storage/' . json_decode($content->pdf, true)[0]['download_link'])}}" target="_blank">{{$content->pdf_btn_title}}</a>
+                        </p>
                         @endif
                     @endforeach
                     </div>
