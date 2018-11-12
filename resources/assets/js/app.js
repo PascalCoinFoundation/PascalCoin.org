@@ -16,6 +16,7 @@ const pageMap = {
     voting: require('./pages/voting'),
     contact: require('./pages/contact'),
     get_started: require('./pages/get_started'),
+    how_to_mine: require('./pages/how_to_mine'),
     pips: require('./pages/pips'),
     pip: require('./pages/pip'),
     rpc: require('./pages/rpc'),

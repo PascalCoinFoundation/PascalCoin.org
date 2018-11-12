@@ -13,6 +13,7 @@
 
 Route::get('/', 'IndexController@home')->name('home');
 Route::get('/whitepapers', 'IndexController@whitepapers')->name('whitepapers');
+Route::get('/how_to_mine', 'IndexController@howToMine')->name('how_to_mine');
 Route::get('/voting', 'IndexController@voting')->name('voting');
 Route::get('/contact', 'IndexController@contact')->name('contact');
 Route::get('/get_started', 'IndexController@getStarted')->name('get_started');

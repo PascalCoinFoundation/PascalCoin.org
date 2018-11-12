@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Extend\ParsedownExt;
 use App\GetStartedContent;
 use App\HomeBox;
+use App\HowToMineContent;
 use App\News;
 use App\Contact;
 use App\FaqGroup;
@@ -63,6 +64,22 @@ class IndexController extends Controller
             ->get();
 
         return view('whitepapers', [
+            'contents' => $contents
+        ]);
+    }
+
+    /**
+     * Shows the whitepaper page.
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function howToMine()
+    {
+        $contents = HowToMineContent::where('published', true)
+            ->orderBy('position', 'ASC')
+            ->get();
+
+        return view('how_to_mine', [
             'contents' => $contents
         ]);
     }
