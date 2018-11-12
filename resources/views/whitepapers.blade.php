@@ -54,6 +54,13 @@ $dtGroup = 'whitepapers';
                         <a class="version" href="/PascalCoinWhitePaperV2.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v2_btn_w1', 'Download Whitepaper V2')<span>@dt($dtGroup, 'whitepaper_v2_btn_w2', 'version 2.1, June 2017')</span></a>
                         <a class="version" href="/PascalCoin White Paper - EN.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v1_btn_w1', 'Download Whitepaper V1') <span>@dt($dtGroup, 'whitepaper_v1_btn_w2', 'version 1.0 July 2016')</span></a>
                     </p>
+                    @foreach($contents as $content)
+                        @if($content->pdf !== null)
+                            <p class="text-center">
+                                <a class="version" href="{{asset('storage/' . json_decode($content->pdf, true)[0]['download_link'])}}" target="_blank">{{$content->pdf_btn_title}}</a>
+                            </p>
+                        @endif
+                    @endforeach
                     </div>
                 </div>
             </div>
@@ -87,8 +94,7 @@ $dtGroup = 'whitepapers';
                                     @parsedown($content->content)
                                 </p>
                                 @if($content->pdf !== null)
-                                    <a class="version" href="{{asset('storage/' . json_decode($content->pdf, true)[0]['download_link'])}}" target="_blank">{{$content->pdf_btn_title}}
-                                        <span>Last updated: {{$content->updated_at->toDateString()}}</span></a>
+                                    <a style="height: auto; padding: 10px;" class="version" href="{{asset('storage/' . json_decode($content->pdf, true)[0]['download_link'])}}" target="_blank">{{$content->pdf_btn_title}}</a>
                                 @endif
                             </div>
                         </div>
