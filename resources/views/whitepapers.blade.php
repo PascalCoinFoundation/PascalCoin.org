@@ -56,10 +56,11 @@ $dtGroup = 'whitepapers';
                         </p>
                     @foreach($contents as $content)
                         @if($content->pdf !== null)
-                        <h3 class="section-heading">{{$content->title}}</h3>
+                        <h3 class="section-heading" style="font-size: 20px">{{$content->title}}</h3>
                         <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div>
                         <p class="text-center">
-                            <a  style="height: auto; padding: 10px;" class="version" href="{{asset('storage/' . json_decode($content->pdf, true)[0]['download_link'])}}" target="_blank">{{$content->pdf_btn_title}}</a>
+                            <a  style="margin-bottom: 0; height: auto; padding: 10px;" class="version" href="{{asset('storage/' . json_decode($content->pdf, true)[0]['download_link'])}}" target="_blank">&raquo; {{$content->pdf_btn_title}} &laquo;</a>
+                            <br /><a style="font-weight: normal; font-size: 12px; color: #000" href="#wp_{{$content->id}}">Click here for a short introduction..</a>
                         </p>
                         @endif
                     @endforeach
