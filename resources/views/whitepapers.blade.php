@@ -1,5 +1,5 @@
 <?php
-$dtGroup = 'get_started';
+$dtGroup = 'whitepapers';
 ?>
 @extends('layouts.main')
 
@@ -86,6 +86,10 @@ $dtGroup = 'get_started';
                                 <p>
                                     @parsedown($content->content)
                                 </p>
+                                @if($content->pdf !== null)
+                                    <a class="version" href="{{asset('storage/' . json_decode($content->pdf, true)[0]['download_link'])}}" target="_blank">{{$content->pdf_btn_title}}
+                                        <span>Last updated: {{$content->updated_at->toDateString()}}</span></a>
+                                @endif
                             </div>
                         </div>
                     </div>
