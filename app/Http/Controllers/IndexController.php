@@ -15,6 +15,7 @@ use App\Press;
 use App\Projects;
 use App\WhitePaperContent;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Spatie\Newsletter\Newsletter;
 use TCG\Voyager\Models\Menu;
 
@@ -65,6 +66,26 @@ class IndexController extends Controller
 
         return view('whitepapers', [
             'contents' => $contents
+        ]);
+    }
+
+    /**
+     * Shows the whitepaper page.
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function whitepaperDownload(WhitePaperContent $whitePaperContent)
+    {
+        if($whitePaperContent->pdf === null) {
+            return abort(404);
+        }
+
+        $decoded = json_decode($whitePaperContent->pdf, true)[0];
+        $fileRubbishName = public_path('storage/' . $decoded['download_link']);
+        $fileRealName = $decoded['original_name'];
+        return \Illuminate\Support\Facades\Response::make(file_get_contents($fileRubbishName), 200, [
+            'Content-Type' => 'application/pdf',
+            'Content-Disposition' => 'inline; filename="'.$fileRealName.'"'
         ]);
     }
 
