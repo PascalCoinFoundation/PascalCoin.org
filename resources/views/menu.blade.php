@@ -49,7 +49,7 @@
     @endphp
 
     <li class="{{ $listItemClass }}">
-        <a href="{{$item->link() == '' ? '#' : url($item->link()) }}" data-link="{{$item->link()}}" target="{{ $item->target }}" style="{{ $styles }}" {!! $linkAttributes or '' !!}>
+        <a href="{{$item->link() == '' ? '#' : url($item->link()) }}" {!! $caret !== null ? ' data-toggle="dropdown"' : '' !!} data-link="{{$item->link()}}" target="{{ $item->target }}" style="{{ $styles }}" {!! $linkAttributes or '' !!}>
             {!! $icon !!}
             <span>{{ $item->title }}</span>
             {!! $caret !!}
