@@ -267,7 +267,7 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
                         <div class="single-counter"
                              style="visibility: visible;">
                             <div class="counter-text">
-                                <p class="fact-number"><span>@dt($dtGroup, 'coin_specs_box2_word1', 'SHA2-')</span> @dt($dtGroup, 'coin_specs_box2_word2', '256D')
+                                <p class="fact-number"><span>@dt($dtGroup, 'coin_specs_box2_word1', 'Random')</span> @dt($dtGroup, 'coin_specs_box2_word2', 'Hash')
                                 </p>
                                 <h4>@dt($dtGroup, 'coin_specs_box2_sub', 'Algorithm')</h4>
                             </div>
@@ -358,11 +358,11 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
 </li>
 <li>
     <i class="fa fa-check-square"></i>
-    <p>CORE: Add 20% developer reward</p>
+    <p>CORE: Add 20% developer reward (PIP-0011)</p>
 </li>
 <li>
     <i class="fa fa-check-square"></i>
-    <p>VOTING: Blockchain voting website</p>
+    <p>VOTING: Blockchain voting explorer</p>
 </li>
 <li>
     <i class="fa fa-check-square"></i>
@@ -383,6 +383,15 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
 <li>
     <i class="fa fa-check-square"></i>
     <p>DAO: 90% developer reward open to community </p>
+</li>
+<li>
+    <i class="fa fa-square"></i>
+    <p>CORE: CPU & ASIC Resistant mining (PIP-0009)</p>
+</li>
+
+<li>
+    <i class="fa fa-square"></i>
+    <p>CORE: Layer-2 operation support</p>
 </li>')
                         </ul>
                     </div>
@@ -406,15 +415,11 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
     <p>CORE: Account Data</p></li>
 <li>
     <i class="fa fa-square"></i>
-    <p>CORE: Layer-2 operation support</p>
+    <p>CORE: Refactoring & optimization</p>
 </li>
 <li>
     <i class="fa fa-square"></i>
-    <p>CORE: Super-optimization phase (goal: 100k/sec)</p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>VOTING: SafeBox Voting (phase 2)</p>
+    <p>VOTING: Voting Protocol (phase 2)</p>
 </li>
 <li>
     <i class="fa fa-square"></i>
@@ -430,6 +435,10 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
 <li>
     <i class="fa fa-square"></i>
     <p>GUI: Mobile Wallets (iOS & Android)</p>
+</li>
+<li>
+    <i class="fa fa-square"></i>
+    <p>LAYER2: Delegated Proof-of-Stage Overlay Network (Smart-Contracts)</p>
 </li>
 <li>
     <i class="fa fa-square"></i>
