@@ -111,7 +111,6 @@ $dtGroup = 'home';
         </div>
     </div>
     @endif
-
     <div class="content-section-b" style="padding-top: 10px; box-shadow: inset 0 -10px 10px -10px #d0d0d0">
         <div class="container">
             <div class="row">
@@ -161,6 +160,19 @@ $dtGroup = 'home';
             </div>
         </div>
     </div>
+    <div class="discord" style="background-color: #7289DA; padding: 10px;">
+        <div class="container">
+            <div class="subsc">
+                <div>
+                    <p style="margin: 0; text-align: center;">
+                        <img src="/images/Discord.svg" style="height: 40px;">
+                        <a style="color: white;" href="https://discord.gg/sJqcgtD">@dt($dtGroup, 'join_discord', 'Join the PascalCoin community on Discord! Click here!')</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Use it -->
     <div id="useit" class="content-section-a">
