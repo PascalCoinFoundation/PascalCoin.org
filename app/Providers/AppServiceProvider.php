@@ -33,6 +33,8 @@ class AppServiceProvider extends ServiceProvider
             foreach ($tickers as $ticker) {
                 \View::share('cmc_' . $ticker->symbol, $ticker);
             }
+            \View::share('latest_release', json_decode(\Storage::get('release.json'), true));
+
         }
     }
 

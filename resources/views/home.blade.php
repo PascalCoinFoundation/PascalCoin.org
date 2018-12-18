@@ -172,8 +172,6 @@ $dtGroup = 'home';
             </div>
         </div>
     </div>
-
-
     <!-- Use it -->
     <div id="useit" class="content-section-a">
         <div class="container">
@@ -195,11 +193,11 @@ PascalCoin’s powerful architecture lays the strong foundation for large-scale 
 PascalCoin achieves all this by introducing a new cryptographic data-structure known as the SafeBox. The SafeBox compliments the Blockchain in a way that allows the Blockchain to be deleted whilst retaining its full cryptographic security.')
                     </div>
                     <a class="btn readmore" href="{{route('get_started')}}" role="button">@dt($dtGroup, 'get_started_now', 'GET STARTED NOW')</a>
-                    <a href="https://github.com/PascalCoin/PascalCoin/releases"
+                    <!--a href="https://github.com/PascalCoin/PascalCoin/releases"
                        target="_blank" role="button" class="btn readmore"><span
                                 class="fa fa-windows"></span> <span
                                 class="fa fa-linux"></span> <span
-                                class="fa fa-apple"></span>@dt($dtGroup, 'download_wallet', 'Download Wallet')</a>
+                                class="fa fa-apple"></span>@dt($dtGroup, 'download_wallet', 'Download Wallet')</a-->
                 </div>
                 <div class="col-sm-4">
                     <iframe width="100%"
@@ -210,7 +208,21 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
                             frameborder="0" allowfullscreen=""></iframe>
                     <small>@dt($dtGroup, 'video_china_linktext', '<a href="https://www.youtube.com/watch?v=s8m8E01VXJ8" target="_blank">Click here</a> for a version with _chinese subtitles_')</small>
                 </div>
-
+            </div>
+        </div>
+        <div class="discord" style="background-color: #f79321; margin-top: 40px;">
+            <div class="container">
+                <div class="subsc">
+                    <div>
+                        <p style="margin-top: 20px;">
+                            <strong style="color: white;">Download wallet version {{$latest_release['version']}}: </strong><br />
+                            <a href="{{$latest_release['files']['windows_64bit']}}" target="_blank" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-windows"></span> @dt($dtGroup, 'download_wallet_windows_64', 'Windows 64bit Wallet')</a>
+                            <a href="{{$latest_release['files']['windows_32bit']}}" target="_blank" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-windows"></span> @dt($dtGroup, 'download_wallet_windows_32', 'Windows 32bit Wallet')</a>
+                            <a href="{{$latest_release['files']['ubuntu_64bit']}}" target="_blank" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-linux"></span> @dt($dtGroup, 'download_wallet_linux', 'Linux Wallet')</a><br />
+                            <a href="{{$latest_release['url']}}" style="color: #fff; font-weight: normal;">&raquo; ..or visit github.com releases.</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- /.container -->

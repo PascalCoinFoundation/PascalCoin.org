@@ -29,6 +29,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('pascal:exchange')->daily();
         $schedule->command('pascal:pip')->hourly();
         $schedule->command('pascal:medium')->hourly();
+        $schedule->command('pascal:releases')->hourly();
     }
 
     /**
