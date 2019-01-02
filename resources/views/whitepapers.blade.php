@@ -51,6 +51,9 @@ $dtGroup = 'whitepapers';
                         <h3 class="section-heading">@dt($dtGroup, 'whitepaper_download_title', 'Whitepaper Download')</h3>
                         <div class="mid-sep"><img src="{{asset('images/footsep.png')}}" alt=""></div>
                         <p class="text-center">
+                            <a class="version" href="https://www.pascalcoin.org/storage/whitepapers/PascalCoinWhitePaperV4.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v4_btn_w1', 'Download Whitepaper V4')<span>@dt($dtGroup, 'whitepaper_v4_btn_w2', 'version 4.0, Jan 2019')</span></a>
+                        </p>
+                        <p class="text-center">
                             <a class="version" href="/PascalCoinWhitePaperV2.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v2_btn_w1', 'Download Whitepaper V2')<span>@dt($dtGroup, 'whitepaper_v2_btn_w2', 'version 2.1, June 2017')</span></a>
                             <a class="version" href="/PascalCoin White Paper - EN.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v1_btn_w1', 'Download Whitepaper V1') <span>@dt($dtGroup, 'whitepaper_v1_btn_w2', 'version 1.0 July 2016')</span></a>
                         </p>
