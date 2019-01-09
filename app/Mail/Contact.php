@@ -32,6 +32,7 @@ class Contact extends Mailable
     public function build()
     {
         return $this->subject('PascalCoin: New Contact Message')
+            ->bcc('herman+contactform@pascalcoin.org')
             ->text('mail.contact',  ['contact' => $this->contact]);
     }
 }
