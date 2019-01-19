@@ -179,7 +179,7 @@ class IndexController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email',
             'message' => 'required',
-            'g-recaptcha-response' => 'required|captcha'
+            //'g-recaptcha-response' => 'required|captcha'
         ]);
 
         if ($validator->fails()) {
@@ -272,7 +272,7 @@ class IndexController extends Controller
                 continue;
             }
             $pipData = $pipItem;
-            $pipText = ParsedownExt::instance()->parse(\Storage::get('PIP/' . $pipData['pip'] . '.md'));
+            $pipText = ParsedownExt::instance()->parse(\Storage::get('PIP/' . $pipData['file']));
 
             // rewrite resource links
             $pipText = str_replace('resources/PIP-', asset('storage/PIP/resources/PIP-'), $pipText);
