@@ -226,7 +226,7 @@ class IndexController extends Controller
             'email' => $request->get('email')
         ]);
 
-        \Newsletter::subscribe($request->get('email'), [], getenv('MAILCHIMP_LIST'));
+        //\Newsletter::subscribe($request->get('email'), [], getenv('MAILCHIMP_LIST'));
 
         return response()->json([
             'success' => true
