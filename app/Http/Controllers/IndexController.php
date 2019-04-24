@@ -261,8 +261,12 @@ class IndexController extends Controller
      * @param int $pip
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function pip(Request $request, int $pip)
+    public function pip(Request $request, $pip)
     {
+        if($pip[0] !== '0') {
+          return redirect()->route('pip', ['pip' => str_pad($pip, 4, '0', STR_PAD_LEFT)]);
+        }
+
         $pips = include storage_path('app/PIP/database.php');
         $pipData = [];
         $pipText = '';

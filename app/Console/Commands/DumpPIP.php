@@ -77,7 +77,7 @@ class DumpPIP extends Command
                 $dbEntry['pip_no'] = (int)$dbEntry['pip'];
                 $dbEntry['pip'] = 'PIP-' . str_pad($dbEntry['pip'], 4, '0', STR_PAD_LEFT);
             } else {
-                $dbEntry['pip_no'] = (int)str_replace('PIP-', '', $dbEntry['pip']);
+                $dbEntry['pip_no'] = str_replace('PIP-', '', $dbEntry['pip']);
                 $dbEntry['pip'] = 'PIP-' . str_pad($dbEntry['pip_no'], 4, '0', STR_PAD_LEFT);
             }
             $dbEntry['file'] = $pip['name'];
