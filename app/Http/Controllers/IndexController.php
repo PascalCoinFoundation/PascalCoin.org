@@ -272,7 +272,7 @@ class IndexController extends Controller
         $pipText = '';
         foreach($pips as $pipItem)
         {
-            if($pipItem['pip_no'] !== $pip) {
+            if($pipItem['pip'] !== 'PIP-' . $pip) {
                 continue;
             }
             $pipData = $pipItem;
