@@ -93,8 +93,11 @@ class DumpPIP extends Command
             if($resource['type'] === 'dir') {
                 $files = GitHub::repo()->contents()->show('PascalCoin', 'PascalCoin', $resource['path']);
                 foreach($files as $file) {
-                    $contents = GitHub::repo()->contents()->show('PascalCoin', 'PascalCoin', $file['path']);
-                    \Storage::put('public/' . $file['path'], base64_decode($contents['content']));
+                    try {
+                        $contents = GitHub::repo()->contents()->show('PascalCoin', 'PascalCoin', $file['path']);
+                        \Storage::put('public/' . $file['path'], base64_decode($contents['content']));
+                    } catch (\RuntimeException $e) {
+                    }
                 }
             }
         }
