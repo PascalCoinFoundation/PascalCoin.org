@@ -226,6 +226,22 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
             </div>
         </div>
         <!-- /.container -->
+
+        <div class="discord" style="background-color: #f5f5f5; margin-top: 40px;">
+            <div class="container">
+                <div class="subsc">
+                    <div>
+                        <p style="margin-top: 20px;">
+                            <strong style="color: #000;">Download mobile wallet: </strong><br />
+                            <a href="https://play.google.com/store/apps/details?id=org.pascalcoin.pascalcoinofficial" target="_blank" role="button"><img title="Get it on Google Play" src="/images/get-it-on-google-play.png" /></a><br />
+                            <a href="https://github.com/davidbolet/PascalcoinAndroidApp" style="color: #000; font-weight: normal;">&raquo; ..or visit github.com releases.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <div id="whatis" class="content-section-b" style="border-top: 0">
