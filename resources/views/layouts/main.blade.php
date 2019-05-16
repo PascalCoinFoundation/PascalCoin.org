@@ -82,7 +82,7 @@ $dtGroup = 'layout';
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset('images/logo.png')}}" alt=""/></a>
+            <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset('images/logo.svg')}}" width="236" height="53" alt=""/></a>
         </div>
         <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
             {{menu('web', 'menu')}}
