@@ -242,6 +242,22 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
             </div>
         </div>
 
+        <div class="discord" style="background-color: #f79321; margin-top: 40px;">
+            <div class="container">
+                <div class="subsc">
+                    <div>
+                        <p style="margin-top: 20px;">
+                            <strong style="color: white;">Start mining PascalCoin: </strong><br />
+                            <a href="/how_to_mine" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-microchip"></span> @dt($dtGroup, 'home_how_to_mine_solo', 'Solo mining')</a>
+                            <a href="/content/how_to_mine_pool" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-group"></span> @dt($dtGroup, 'home_how_to_mine_pool', 'Pool mining')</a>
+                            <a href="/content/how-to-use-screensaver-miner" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-desktop"></span> @dt($dtGroup, 'home_how_to_mine_screensaver', 'Screensaver mining')</a>
+                        </p>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 
