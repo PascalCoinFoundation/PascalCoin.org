@@ -218,6 +218,7 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
                             <strong style="color: white;">Download wallet version {{$latest_release['version']}}: </strong><br />
                             <a href="{{$latest_release['files']['windows_64bit']}}" target="_blank" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-windows"></span> @dt($dtGroup, 'download_wallet_windows_64', 'Windows 64bit Wallet')</a>
                             <a href="{{$latest_release['files']['windows_32bit']}}" target="_blank" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-windows"></span> @dt($dtGroup, 'download_wallet_windows_32', 'Windows 32bit Wallet')</a>
+                            <a href="{{$latest_release['files']['macos_64bit']}}" target="_blank" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-apple"></span> @dt($dtGroup, 'download_wallet_macos_64', 'macOS 64bit Wallet')</a>
                             <a href="{{$latest_release['files']['ubuntu_64bit']}}" target="_blank" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-linux"></span> @dt($dtGroup, 'download_wallet_linux', 'Linux Wallet')</a><br />
                             <a href="{{$latest_release['url']}}" style="color: #fff; font-weight: normal;">&raquo; ..or visit github.com releases.</a>
                         </p>
