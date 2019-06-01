@@ -61,6 +61,7 @@ class DumpReleases extends Command
                 'ubuntu_64bit' => null,
                 'windows_32bit' => null,
                 'windows_64bit' => null,
+                'macos_64bit' => null,
                 'source_zip' => $latestRelease['zipball_url'],
                 'source_tgz' => $latestRelease['tarball_url'],
             ]
@@ -73,6 +74,8 @@ class DumpReleases extends Command
                 } else {
                     $data['files']['windows_64bit'] = $asset['browser_download_url'];
                 }
+            } else if(Str::endsWith($asset['name'], '.dmg')) {
+                $data['files']['macos_64bit'] = $asset['browser_download_url'];
             } else {
                 if(Str::contains(strtolower($asset['name']), 'ubuntu')) {
                     $data['files']['ubuntu_64bit'] = $asset['browser_download_url'];

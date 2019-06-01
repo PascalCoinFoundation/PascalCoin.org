@@ -10,6 +10,17 @@ $dtGroup = 'layout';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     @if(View::getSection('meta_keywords') === null)
         <meta name="keywords" content="@dt($dtGroup, 'meta_keywords', 'PascalCoin, BlockChain, Cryptocurrency, SafeBox, revolution', false)">
     @else
@@ -71,7 +82,7 @@ $dtGroup = 'layout';
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset('images/logo.png')}}" alt=""/></a>
+            <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset('images/logo.svg')}}" width="236" height="53" alt=""/></a>
         </div>
         <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
             {{menu('web', 'menu')}}
@@ -167,43 +178,6 @@ $dtGroup = 'layout';
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="footer-top-content">
-                        <div class="footer-widget-heading">
-                            <h3>@dt($dtGroup, 'footer_exchanges_title', 'Exchanges')</h3>
-                        </div>
-                        <div class="footer-widget-content">
-                            @dt($dtGroup, 'footer_exchanges_content', '
-<ul class="links">
-    <li>
-        <i class="fa fa-angle-right"></i>
-        <a href="https://poloniex.com/exchange#btc_pasc" target="_blank">Poloniex</a>
-    </li>
-    <li>
-        <i class="fa fa-angle-right"></i>
-        <a href="https://www.qbtc.com/trade" target="_blank">QBTC</a>
-    </li>
-    <li>
-        <i class="fa fa-angle-right"></i>
-        <a href="https://www.cryptomonster.co.uk/buy-pascal-coin" target="_blank">CryptoMonster (supports bank-wires)</a>
-    </li>
-    <li>
-        <i class="fa fa-angle-right"></i>
-        <a href="https://www.pascwallet.com/Market/MarketPurchase" target="_blank"><span class="site-footer__link-subtext">PascWallet (PASA exchange)</span></a>
-    </li>
-    <li>
-        <i class="fa fa-angle-right"></i>
-        <a href="http://www.getpasa.com/" target="_blank"><span class="site-footer__link-subtext">GetPASA (get your first account)</span></a>
-    </li>
-    <li>
-        <i class="fa fa-angle-right"></i>
-        <a href="https://markets.bisq.network/?market=pasc_btc" target="_blank">Bisq (decentralised exchange)</a>
-    </li>
-</ul>')
-
-                        </div>
-                    </div>
-                </div>
 
                 <div class="col-md-4 col-sm-6">
                     <div class="footer-tags-widget-area footer-top-content">
@@ -257,6 +231,45 @@ $dtGroup = 'layout';
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-top-content">
+                        <div class="footer-widget-heading">
+                            <h3>@dt($dtGroup, 'footer_exchanges_title', 'Exchanges')</h3>
+                        </div>
+                        <div class="footer-widget-content">
+                            @dt($dtGroup, 'footer_exchanges_content', '
+<ul class="links">
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://poloniex.com/exchange#btc_pasc" target="_blank">Poloniex</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://www.qbtc.com/trade" target="_blank">QBTC</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://www.cryptomonster.co.uk/buy-pascal-coin" target="_blank">CryptoMonster (supports bank-wires)</a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://www.pascwallet.com/Market/MarketPurchase" target="_blank"><span class="site-footer__link-subtext">PascWallet (PASA exchange)</span></a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="http://www.getpasa.com/" target="_blank"><span class="site-footer__link-subtext">GetPASA (get your first account)</span></a>
+    </li>
+    <li>
+        <i class="fa fa-angle-right"></i>
+        <a href="https://markets.bisq.network/?market=pasc_btc" target="_blank">Bisq (decentralised exchange)</a>
+    </li>
+</ul>')
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

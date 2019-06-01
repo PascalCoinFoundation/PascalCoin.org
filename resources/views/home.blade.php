@@ -218,6 +218,7 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
                             <strong style="color: white;">Download wallet version {{$latest_release['version']}}: </strong><br />
                             <a href="{{$latest_release['files']['windows_64bit']}}" target="_blank" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-windows"></span> @dt($dtGroup, 'download_wallet_windows_64', 'Windows 64bit Wallet')</a>
                             <a href="{{$latest_release['files']['windows_32bit']}}" target="_blank" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-windows"></span> @dt($dtGroup, 'download_wallet_windows_32', 'Windows 32bit Wallet')</a>
+                            <a href="{{$latest_release['files']['macos_64bit']}}" target="_blank" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-apple"></span> @dt($dtGroup, 'download_wallet_macos_64', 'macOS 64bit Wallet')</a>
                             <a href="{{$latest_release['files']['ubuntu_64bit']}}" target="_blank" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-linux"></span> @dt($dtGroup, 'download_wallet_linux', 'Linux Wallet')</a><br />
                             <a href="{{$latest_release['url']}}" style="color: #fff; font-weight: normal;">&raquo; ..or visit github.com releases.</a>
                         </p>
@@ -226,6 +227,38 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
             </div>
         </div>
         <!-- /.container -->
+
+        <div class="discord" style="background-color: #f5f5f5; margin-top: 40px;">
+            <div class="container">
+                <div class="subsc">
+                    <div>
+                        <p style="margin-top: 20px;">
+                            <strong style="color: #000;">Download mobile wallet: </strong><br />
+                            <a href="https://play.google.com/store/apps/details?id=org.pascalcoin.pascalcoinofficial" target="_blank" role="button"><img title="Get it on Google Play" src="/images/get-it-on-google-play.png" /></a><br />
+                            <a href="https://github.com/davidbolet/PascalcoinAndroidApp" style="color: #000; font-weight: normal;">&raquo; ..or visit github.com releases.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="discord" style="background-color: #f79321; margin-top: 40px;">
+            <div class="container">
+                <div class="subsc">
+                    <div>
+                        <p style="margin-top: 20px;">
+                            <strong style="color: white;">Start mining PascalCoin: </strong><br />
+                            <a href="/how_to_mine" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-microchip"></span> @dt($dtGroup, 'home_how_to_mine_solo', 'Solo mining')</a>
+                            <a href="/content/how_to_mine_pool" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-group"></span> @dt($dtGroup, 'home_how_to_mine_pool', 'Pool mining')</a>
+                            <a href="/content/how-to-use-screensaver-miner" role="button" class="btn readmore" style="background: white; color: #000"><span class="fa fa-desktop"></span> @dt($dtGroup, 'home_how_to_mine_screensaver', 'Screensaver mining')</a>
+                        </p>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <div id="whatis" class="content-section-b" style="border-top: 0">
@@ -340,150 +373,100 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <h3>Accomplished</h3>
+                    <h3>Version 1</h3>
                     <div>
                         <ul class="roadmap">
-                            @dt($dtGroup, 'roadmap_done', '
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>Initial launch</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>Decentralised Development Process (PIP)</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>CORE: Miner infrastructure</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>CORE: In-protocol account exchanging</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>CORE: Infinite Scaling (100 block chain)</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>CORE: Checkpointing</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>CORE: Account Names & Types</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>CORE: Mobile/light-client support</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>CORE: 50% inflation reduction</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>CORE: Add 20% developer reward (PIP-0011)</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>VOTING: Blockchain voting explorer</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>VOTING: SafeBox Voting (phase 1)</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>ANON: In-protocol PASC & PASA exchange</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>GUI: New Wallet (with OS X support)</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>GUI: Translation Portal</p>
-</li>
-<li>
-    <i class="fa fa-check-square"></i>
-    <p>DAO: 90% developer reward open to community </p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>CORE: CPU & ASIC Resistant mining (PIP-0009)</p>
-</li>
-
-<li>
-    <i class="fa fa-square"></i>
-    <p>CORE: Layer-2 operation support</p>
-</li>')
+                            @dt($dtGroup, 'roadmap_version_1', '')
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-
-                    <h3>Our Goals</h3>
+                    <h3>Version 2</h3>
                     <div>
-                        <ul class="roadmap goals">@dt($dtGroup, 'roadmap_goals', '
-<li>
-    <i class="fa fa-square"></i>
-    <p>MULTISIG: Schnorr crypto-library</p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>CORE: Checkpoint Torrenting</p></li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>CORE: Account Data</p></li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>CORE: Refactoring & optimization</p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>VOTING: Voting Protocol (phase 2)</p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>MULTISIG: Schnorr aggregate signatures</p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>ANON: Private Balances & Payments (ZK-SNARKs)</p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>GUI: V3 Full Translations</p></li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>GUI: Mobile Wallets (iOS & Android)</p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>LAYER2: Delegated Proof-of-Stage Overlay Network (Smart-Contracts)</p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>LAYER2: Private Send Protocol</p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>LAYER2: PASC Data Storage Network (DSN)</p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>LAYER2: PascalTokens V1 </p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>LAYER2: PascalDEX (decentralised exchange)</p>
-</li>
-<li>
-    <i class="fa fa-square"></i>
-    <p>LAYER2: PascalMessenger (PASC MSG) </p>
-</li>')
+                        <ul class="roadmap">
+                            @dt($dtGroup, 'roadmap_version_2', '')
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Version 3</h3>
+                    <div>
+                        <ul class="roadmap">
+                            @dt($dtGroup, 'roadmap_version_3', '')
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Version 4</h3>
+                    <div>
+                        <ul class="roadmap">
+                            @dt($dtGroup, 'roadmap_version_4', '')
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Version 5</h3>
+                    <div>
+                        <ul class="roadmap">
+                            @dt($dtGroup, 'roadmap_version_5', '')
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Version 6</h3>
+                    <div>
+                        <ul class="roadmap">
+                            @dt($dtGroup, 'roadmap_version_6', '')
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Version 7</h3>
+                    <div>
+                        <ul class="roadmap">
+                            @dt($dtGroup, 'roadmap_version_7', '')
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>R&amp;D Track</h3>
+                    <div>
+                        <ul class="roadmap">
+                            @dt($dtGroup, 'roadmap_rd_track', '')
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>WIP Track</h3>
+                    <div>
+                        <ul class="roadmap">
+                            @dt($dtGroup, 'roadmap_wip_track', '')
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Production Assets</h3>
+                    <div>
+                        <ul class="roadmap">
+                            @dt($dtGroup, 'roadmap_production_assets', '')
                         </ul>
                     </div>
                 </div>
