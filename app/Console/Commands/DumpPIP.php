@@ -51,6 +51,10 @@ class DumpPIP extends Command
                 continue;
             }
 
+            if(substr($pip['name'], -1 * strlen('_overview.md')) == '_overview.md') {
+                continue;
+            }
+
             $contents = GitHub::repo()->contents()->show('PascalCoin', 'PascalCoin', $pip['path']);
             $decoded = base64_decode($contents['content']);
             \Storage::put('PIP/' . $pip['name'], $decoded);
