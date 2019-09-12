@@ -232,10 +232,16 @@ PascalCoin achieves all this by introducing a new cryptographic data-structure k
             <div class="container">
                 <div class="subsc">
                     <div>
-                        <p style="margin-top: 20px;">
+                        <p style="margin-top: 20px; margin-right: 20px; display: inline-block">
+                            <strong style="color: #000;">Download Blaise wallet: </strong><br />
+                            <a href="https://apps.apple.com/us/app/blaise-pascal-wallet/id1473011216" target="_blank" role="button" style="width:168px; height:50px; background:white; border-radius: 5px; display: inline-block; line-height: 45px; text-align:center"><img src="https://blaisewallet.com/assets/button-appstore-orange.svg" /></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.appditto.blaise" target="_blank" role="button" style="width:168px; height:50px; background:white; border-radius: 5px; display: inline-block; line-height: 45px; text-align:center"><img src="https://blaisewallet.com/assets/button-playstore-orange.svg" /></a><br />
+                            <a target="_blank" href="https://blaisewallet.com/" style="color: #000; font-weight: normal;">&raquo; ..or learn more about Blaise Wallet.</a>
+                        </p>
+                        <p style="margin-top: 20px; display: inline-block">
                             <strong style="color: #000;">Download mobile wallet: </strong><br />
                             <a href="https://play.google.com/store/apps/details?id=org.pascalcoin.pascalcoinofficial" target="_blank" role="button"><img title="Get it on Google Play" src="/images/get-it-on-google-play.png" /></a><br />
-                            <a href="https://github.com/davidbolet/PascalcoinAndroidApp" style="color: #000; font-weight: normal;">&raquo; ..or visit github.com releases.</a>
+                            <a target="_blank" href="https://github.com/davidbolet/PascalcoinAndroidApp" style="color: #000; font-weight: normal;">&raquo; ..or visit github.com releases.</a>
                         </p>
                     </div>
                 </div>

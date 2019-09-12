@@ -196,7 +196,10 @@ class IndexController extends Controller
             'message' => $request->get('message'),
         ]);
 
-        \Mail::to(config('pascal.mail.to'))->send(new \App\Mail\Contact($contact));
+        $transport = \Mail::to(config('pascal.mail.to'));
+        $bcc_addresses = explode(',', config('pascal.mail.bcc'));
+        $transport->bcc($bcc_addresses);
+        $transport->send(new \App\Mail\Contact($contact));
 
         return response()->json([
             'success' => true
