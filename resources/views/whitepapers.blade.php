@@ -54,6 +54,7 @@ $dtGroup = 'whitepapers';
 -->
                         <p class="text-center">
                             <a class="version" href="https://www.pascalcoin.org/storage/whitepapers/PascalWhitePaperV5.pdf" target="_blank">@dt($dtGroup, 'whitepaper_v5_btn_w1', 'Download Whitepaper V5')<span>@dt($dtGroup, 'whitepaper_v5_btn_w2', 'version 5.0, Sept 2019')</span></a>
+                            <a class="version" href="https://www.pascalcoin.org/storage/whitepapers/PascalWhitePaperV5_Chinese.pdf" target="_blank">@dt($dtGroup, 'whitepaper_cn_v5_btn_w1', 'Download Whitepaper V5 (Chinese)')<span>@dt($dtGroup, 'whitepaper_cn_v5_btn_w2', 'version 5.0, Sept 2019')</span></a>
                         </p>
 <!--
                         <p class="text-center">
