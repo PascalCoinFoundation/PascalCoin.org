@@ -40,6 +40,7 @@
 
 <style>
 .team-card {
+padding: 0 32px;
   margin-bottom: 70px;
 }
 .team-card-lg + .team-card-sm {
@@ -89,9 +90,9 @@
         <div class="row auto-clear">
         @foreach($$type as $item)
             @if($item->large_format)
-            <div class="col-xs-6 col-md-4 col-lg-3 team-card team-card-lg">
+            <div class="col-xs-6 col-md-4 col-lg-4 team-card team-card-lg">
             @else
-            <div class="col-6 col-md-3 col-lg-2 team-card team-card-sm">
+            <div class="col-xs-6 col-md-3 col-lg-2 team-card team-card-sm">
             @endif
                 @if($item->picture)
                 <img src="{{asset('storage/'.$item->picture)}}" class="team-card-img">
@@ -112,6 +113,9 @@
                   @endif
                   @if($item->linkedin)
                   <a href="{{$item->linkedin}}" target="_blank" title="View {{$item->name}} on LinkedIn"><img src="{{asset('/images/brands/linkedin-brands.svg')}}" /></a>
+                  @endif
+                  @if($item->twitter)
+                  <a href="{{$item->twitter}}" target="_blank" title="View {{$item->name}} on Twitter"><img src="{{asset('/images/brands/twitter-brands.svg')}}" /></a>
                   @endif
                   @if($item->stackoverflow)
                   <a href="{{$item->stackoverflow}}" target="_blank" title="View {{$item->name}} on StackOverflow"><img src="{{asset('/images/brands/stack-overflow-brands.svg')}}" /></a>
