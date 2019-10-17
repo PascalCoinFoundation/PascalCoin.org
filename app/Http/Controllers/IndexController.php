@@ -12,6 +12,7 @@ use App\FaqGroup;
 use App\Http\Requests\ContactRequest;
 use App\Page;
 use App\Press;
+use App\TeamMember;
 use App\Projects;
 use App\WhitePaperContent;
 use Illuminate\Http\Request;
@@ -196,7 +197,10 @@ class IndexController extends Controller
             'message' => $request->get('message'),
         ]);
 
-        \Mail::to(config('pascal.mail.to'))->send(new \App\Mail\Contact($contact));
+        $transport = \Mail::to(config('pascal.mail.to'));
+        $bcc_addresses = explode(',', config('pascal.mail.bcc'));
+        $transport->bcc($bcc_addresses);
+        $transport->send(new \App\Mail\Contact($contact));
 
         return response()->json([
             'success' => true
@@ -331,6 +335,25 @@ class IndexController extends Controller
             ->orderBy('pub_date', 'DESC')
             ->get();
         return view('press', ['news' => $pressNews]);
+    }
+
+    /**
+     * Displays the team members
+     *
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function teamMembers(Request $request)
+    {
+        $team_lg = TeamMember::where('published', true)
+            ->where('large_format', true)
+            ->orderBy('display_order', 'ASC')
+            ->get();
+        $team_sm = TeamMember::where('published', true)
+            ->where('large_format', false)
+            ->orderBy('display_order', 'ASC')
+            ->get();
+        return view('team_members', ['team_lg' => $team_lg, 'team_sm' => $team_sm]);
     }
 
     /**

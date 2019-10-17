@@ -19,6 +19,7 @@ Route::get('/voting', 'IndexController@voting')->name('voting');
 Route::get('/contact', 'IndexController@contact')->name('contact');
 Route::get('/get_started', 'IndexController@getStarted')->name('get_started');
 Route::get('/press', 'IndexController@press')->name('press');
+Route::get('/team', 'IndexController@teamMembers')->name('team_members');
 Route::get('/funding-transparency', 'IndexController@fundingTransparency')->name('funding_transparency');
 
 Route::post('/contact', 'IndexController@contactSubmit')->name('contact-submit');

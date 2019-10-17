@@ -6,6 +6,7 @@ return [
         'currencies' => ['USD', 'EUR', 'BTC']
     ],
     'mail' => [
-        'to' => env('MAIL_CONTACT_TO')
+        'to' => env('MAIL_CONTACT_TO'),
+        'bcc' => env('MAIL_CONTACT_BCC')
     ]
 ];
