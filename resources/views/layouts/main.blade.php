@@ -162,10 +162,10 @@ $dtGroup = 'layout';
         <i class="fa fa-angle-right"></i>
         <a href="/development/projects">Community Projects</a>
     </li>
-    <li>
+    <!--li>
         <i class="fa fa-angle-right"></i>
         <a href="/contact">Contact</a>
-    </li>
+    </li-->
     <li>
         <i class="fa fa-angle-right"></i>
         <a href="https://github.com/PascalCoin/PascalCoin/releases" target="_blank">Download Wallet</a>
